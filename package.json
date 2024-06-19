@@ -1,24 +1,29 @@
 {
   "name": "yuque2xmind",
   "version": "1.0.0",
-  "author": "zzy",
+  "author": "Your Name",
   "description": "This is a tool to convert yuque mind to xmind",
   "main": "index.js",
   "type": "module",
   "dependencies": {
+    "axios": "^1.7.2",
     "cheerio": "^1.0.0-rc.12",
     "esm": "^3.2.25",
+    "fs-extra": "^11.2.0",
     "inquirer": "^9.2.23",
     "js-yaml": "^4.1.0",
     "jszip": "^3.10.1",
+    "lodash": "^4.17.21",
     "uuid": "^10.0.0",
     "xml2js": "^0.6.2",
     "xmlbuilder": "^15.1.1"
   },
   "scripts": {
     "start": "node ./script/convert_lakemind_to_xmind.js",
+    "testToContent": "node ./test/test_to_content.js",
+    "lakeToJson": "node ./test/lakemind_to_json.cjs",
+    "lakeJsonToContent": "node ./test/lakemind_to_content.cjs",
     "test": "mocha"
   },
-  "author": "Your Name",
   "license": "MIT"
 }
