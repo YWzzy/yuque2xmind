@@ -4,6 +4,7 @@ import { fileURLToPath } from "url";
 import inquirer from "inquirer";
 import { SingleBar } from "cli-progress";
 import Table from "cli-table3";
+import pLimit from "p-limit";
 
 import { convertLakeboardToJson } from "./convertLakeboardToJson.js";
 import { convertLakeMindToContent } from "./convertLakeJsonToContentJson.js";
@@ -88,12 +89,6 @@ prompt([
           const selectedFiles = answers.selectedFiles
             .filter((file) => file !== "all")
             .map((file) => path.join(rootDir, file));
-          // console.log("选择的文件:");
-          // console.log("====================================");
-          // selectedFiles.forEach((file) => {
-          //   console.log(file);
-          // });
-          // console.log("====================================");
 
           // 使用 cli-progress 创建总进度条
           const totalProgressBar = new SingleBar({
@@ -113,11 +108,6 @@ prompt([
                 hAlign: "center",
                 style: { head: ["green"] },
               },
-              // {
-              //   content: "文件路径",
-              //   hAlign: "center",
-              //   style: { head: ["green"] },
-              // },
               {
                 content: "原文件大小 (bytes)",
                 hAlign: "center",
@@ -142,9 +132,11 @@ prompt([
             colWidths: [30, 20, 20, 60, 20],
           });
 
-          // 处理每个文件
-          for (let i = 0; i < selectedFiles.length; i++) {
-            const file = selectedFiles[i];
+          // 设置并发限制 - 一次最多处理 5 个文件
+          const limit = pLimit(5);
+
+          // 处理每个文件的函数
+          const processFile = async (file) => {
             const fileName = path.basename(file, ".lakeboard");
             const savePath = path.join(__dirname, "..", "result", fileName);
             const rowData = [fileName, "-", "-", savePath, "处理中"];
@@ -170,8 +162,16 @@ prompt([
 
             // 更新表格和进度条
             table.push(rowData);
-            totalProgressBar.update(i + 1);
-          }
+            totalProgressBar.increment();
+          };
+
+          // 使用 p-limit 进行并发控制
+          const promises = selectedFiles.map((file) =>
+            limit(() => processFile(file))
+          );
+
+          // 等待所有文件处理完成
+          await Promise.all(promises);
 
           // 结束总进度条
           totalProgressBar.stop();
