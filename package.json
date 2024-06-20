@@ -12,6 +12,7 @@
     "cli-table3": "^0.6.5",
     "esm": "^3.2.25",
     "fs-extra": "^11.2.0",
+    "he": "^1.2.0",
     "inquirer": "^9.2.23",
     "js-yaml": "^4.1.0",
     "jszip": "^3.10.1",
@@ -25,7 +26,7 @@
     "start": "node ./script/convert_lakemind_to_xmind.js",
     "testToContent": "node ./test/test_to_content.js",
     "testToXmind": "node ./test/file_to_xmind.js",
-    "test": "mocha"
+    "LakeToJson": "node ./test/lake_to_json.js"
   },
   "license": "MIT"
 }
