@@ -70,7 +70,8 @@ async function generateXMindFile(savePath) {
 
     const xmindFilePath = path.join(
       savePath,
-      "..",
+      "../..",
+      "output",
       `${fileName}.xmind`
       // `${fileName}_${timestamp}.xmind`
     );

@@ -138,7 +138,13 @@ prompt([
           // 处理每个文件的函数
           const processFile = async (file) => {
             const fileName = path.basename(file, ".lakeboard");
-            const savePath = path.join(__dirname, "..", "result", fileName);
+            const savePath = path.join(
+              __dirname,
+              "..",
+              "result",
+              "cache",
+              fileName
+            );
             const rowData = [fileName, "-", "-", savePath, "处理中"];
             const startTime = Date.now();
 

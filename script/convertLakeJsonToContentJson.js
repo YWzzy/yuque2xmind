@@ -12,16 +12,14 @@ const convertTopic = (
   downloadPromises,
   parentSummaries = []
 ) => {
-  const htmlPaeseObj = parseHtmlField(node.html);
+  const htmlParseObj = parseHtmlField(node.html);
+  // 处理可能的空或未定义的情况
+  const attributedTitle = htmlParseObj.attributedTitle || [{ text: "" }];
   const topic = {
     id: node.id,
     class: "topic",
-    title: htmlPaeseObj.text,
-    attributedTitle: [
-      {
-        text: htmlPaeseObj.text,
-      },
-    ],
+    title: attributedTitle.map((attr) => attr.text).join(""),
+    attributedTitle: attributedTitle,
     children: {
       attached: [],
       summary: [],
@@ -29,16 +27,8 @@ const convertTopic = (
     summaries: [],
   };
 
-  if (htmlPaeseObj.attributes && htmlPaeseObj.tag === "a") {
-    topic.href = htmlPaeseObj.attributes.href;
-  }
-
-  if (htmlPaeseObj.attributes && htmlPaeseObj.attributes.style) {
-    const style = addFoPrefixToStyle(htmlPaeseObj.attributes.style);
-    topic.style = {
-      id: uuidv4(),
-      properties: style,
-    };
+  if (attributedTitle.some((attr) => attr.href)) {
+    topic.href = attributedTitle.find((attr) => attr.href).href;
   }
 
   if (node.children) {
@@ -62,11 +52,7 @@ const convertTopic = (
             ...child.image.uploadInfo,
             url: child.image.src,
           };
-          // console.log("====================================");
-          // console.log("开始处理下载文件:", fileParams);
-          // console.log("====================================");
           if (fileParams.url && savePath) {
-            // 将下载的 promise 添加到数组中
             downloadPromises.push(
               downloadFile(fileParams, savePath, 50 * 1024 * 1024, 30000)
             );
@@ -131,12 +117,10 @@ export const convertLakeMindToContent = async (lakemind, savePath) => {
   const rootTopic = {
     id: rootNode.id,
     class: "topic",
-    title: rootTopicHtmlPaeseObj.text,
-    attributedTitle: [
-      {
-        text: rootTopicHtmlPaeseObj.text,
-      },
-    ],
+    title: rootTopicHtmlPaeseObj.attributedTitle
+      .map((attr) => attr.text)
+      .join(""),
+    attributedTitle: rootTopicHtmlPaeseObj.attributedTitle,
     structureClass: "org.xmind.ui.logic.right",
     children: {
       attached: [],

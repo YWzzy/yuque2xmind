@@ -18,11 +18,13 @@ const parseStyle = (style) => {
 export const parseHtmlField = (html) => {
   try {
     if (!html) {
-      return {
-        attributes: null,
-        tag: null,
-        text: null,
-      };
+      return [
+        {
+          attributes: null,
+          tag: null,
+          text: null,
+        },
+      ];
     }
 
     // if (!html.includes("<")) {
@@ -38,31 +40,43 @@ export const parseHtmlField = (html) => {
     // const decodedHtml = he.decode(html);
 
     const $ = cheerio.load(html);
-    const nodes = $("body").contents(); // 只取第一个节点
-    const firstNode = $("body").contents().first();
-    const tagName =
-      firstNode[0] && firstNode[0].tagName ? firstNode[0].tagName : null;
-    const attributes = {};
-    if (firstNode[0] && firstNode[0].attribs) {
-      for (const [key, value] of Object.entries(firstNode[0].attribs)) {
-        if (key === "style") {
-          attributes[key] = parseStyle(value);
-        } else {
-          attributes[key] = value;
+    const elements = $("body").contents(); // 获取所有顶层节点
+
+    const attributedTitle = [];
+    elements.each((index, element) => {
+      const node = $(element);
+      const tagName = element.tagName ? element.tagName : null;
+      const text = node.text().trim();
+      const attributes = {};
+
+      if (element.attribs) {
+        for (const [key, value] of Object.entries(element.attribs)) {
+          if (key === "style") {
+            const styleAttributes = parseStyle(value);
+            Object.keys(styleAttributes).forEach((styleKey) => {
+              attributes[`fo:${styleKey}`] = styleAttributes[styleKey];
+            });
+          } else {
+            attributes[key] = value;
+          }
         }
       }
-    }
-    const text = firstNode.text().trim();
 
-    if (nodes.length > 1) {
-      console.warn(`HTML 字段包含多个节点，只取第一个节点。字段内容：${html}`);
-      console.log(text);
+      if (text) {
+        attributedTitle.push({
+          text: text,
+          ...attributes,
+        });
+      }
+    });
+
+    // 如果没有任何内容，则返回一个空的 attributedTitle 数组
+    if (attributedTitle.length === 0) {
+      attributedTitle.push({ text: "" });
     }
 
     return {
-      attributes: Object.keys(attributes).length ? attributes : null,
-      tag: tagName,
-      text: text,
+      attributedTitle,
     };
   } catch (error) {
     console.error(`解析 HTML 字段时发生错误: ${error.message}`);
