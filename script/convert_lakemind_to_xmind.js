@@ -113,8 +113,18 @@ prompt([
                 hAlign: "center",
                 style: { head: ["green"] },
               },
+              // {
+              //   content: "文件路径",
+              //   hAlign: "center",
+              //   style: { head: ["green"] },
+              // },
               {
-                content: "文件路径",
+                content: "原文件大小 (bytes)",
+                hAlign: "center",
+                style: { head: ["green"] },
+              },
+              {
+                content: "处理时长 (ms)",
                 hAlign: "center",
                 style: { head: ["green"] },
               },
@@ -124,12 +134,12 @@ prompt([
                 style: { head: ["green"] },
               },
               {
-                content: "处理结果",
+                content: "结果",
                 hAlign: "center",
                 style: { head: ["green"] },
               },
             ],
-            colWidths: [30, 60, 60, 10],
+            colWidths: [30, 20, 20, 60, 20],
           });
 
           // 处理每个文件
@@ -137,16 +147,25 @@ prompt([
             const file = selectedFiles[i];
             const fileName = path.basename(file, ".lakeboard");
             const savePath = path.join(__dirname, "..", "result", fileName);
-            const rowData = [fileName, file, `${savePath}.xmind`, "处理中"];
+            const rowData = [fileName, "-", "-", savePath, "处理中"];
+            const startTime = Date.now();
 
             try {
+              const stat = fs.statSync(file);
+              const fileSize = stat.size;
+
               const LakeJson = await convertLakeboardToJson(file);
               await convertLakeMindToContent(LakeJson, savePath);
               await generateXMindFile(savePath);
-              rowData[3] = "完成";
+
+              const endTime = Date.now();
+              const elapsedTime = endTime - startTime;
+              rowData[4] = "已完成";
+              rowData[2] = elapsedTime.toString();
+              rowData[1] = fileSize.toString();
             } catch (error) {
               console.error(`处理文件 ${file} 时发生错误:`, error);
-              rowData[3] = "失败";
+              rowData[4] = "失败";
             }
 
             // 更新表格和进度条
