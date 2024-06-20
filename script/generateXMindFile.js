@@ -68,7 +68,12 @@ async function generateXMindFile(savePath) {
       .replace(/[-:.T]/g, "") // 去除所有 - : . 和 T 字符
       .slice(0, 14); // 截取前14个字符，即 yyyyMMddHHmmss
 
-    const xmindFilePath = path.join(savePath, `${fileName}_${timestamp}.xmind`);
+    const xmindFilePath = path.join(
+      savePath,
+      "..",
+      `${fileName}.xmind`
+      // `${fileName}_${timestamp}.xmind`
+    );
 
     // 生成 XMind 文件的压缩包数据
     const xmindData = await zip.generateAsync({ type: "nodebuffer" });
@@ -76,7 +81,7 @@ async function generateXMindFile(savePath) {
     // 将压缩数据写入 XMind 文件
     await fsPromises.writeFile(xmindFilePath, xmindData);
 
-    console.log(`XMind 文件已生成并保存到: ${xmindFilePath}`);
+    // console.log(`XMind 文件已生成并保存到: ${xmindFilePath}`);
   } catch (error) {
     console.error("生成 XMind 文件时出错:", error);
   }
