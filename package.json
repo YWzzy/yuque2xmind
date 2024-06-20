@@ -21,8 +21,7 @@
   "scripts": {
     "start": "node ./script/convert_lakemind_to_xmind.js",
     "testToContent": "node ./test/test_to_content.js",
-    "lakeToJson": "node ./test/lakemind_to_json.cjs",
-    "lakeJsonToContent": "node ./test/lakemind_to_content.cjs",
+    "testToXmind": "node ./test/file_to_xmind.js",
     "test": "mocha"
   },
   "license": "MIT"

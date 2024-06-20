@@ -76,11 +76,14 @@ async function generateXMindFile(savePath) {
     // 将压缩数据写入 XMind 文件
     await fsPromises.writeFile(xmindFilePath, xmindData);
 
-    console.log(`成功生成 XMind 文件: ${xmindFilePath}`);
+    console.log(`XMind 文件已生成并保存到: ${xmindFilePath}`);
   } catch (error) {
-    console.error("转换为 XMind 文件时发生错误:", error);
+    console.error("生成 XMind 文件时出错:", error);
   }
 }
 
-// 导出该函数
 export { generateXMindFile };
+
+// // 示例用法
+// const savePath = "./output";
+// generateXMindFile(savePath);
