@@ -62,9 +62,9 @@ const convertTopic = (
             ...child.image.uploadInfo,
             url: child.image.src,
           };
-          console.log("====================================");
-          console.log("开始处理下载文件:", fileParams);
-          console.log("====================================");
+          // console.log("====================================");
+          // console.log("开始处理下载文件:", fileParams);
+          // console.log("====================================");
           if (fileParams.url && savePath) {
             // 将下载的 promise 添加到数组中
             downloadPromises.push(
@@ -154,15 +154,15 @@ export const convertLakeMindToContent = async (lakemind, savePath) => {
   content[0].rootTopic = rootTopic;
 
   const resultFilePath = path.join(savePath, "content.json");
-  console.log("开始处理文件:");
-  console.log("====================================");
-  console.log(resultFilePath);
-  console.log("====================================");
+  // console.log("开始处理文件:");
+  // console.log("====================================");
+  // console.log(resultFilePath);
+  // console.log("====================================");
 
   try {
     await mkdir(savePath, { recursive: true });
     await writeFile(resultFilePath, JSON.stringify(content, null, 4), "utf8");
-    console.log("文件已成功转换并保存为 content.json");
+    // console.log("文件已成功转换并保存为 content.json");
   } catch (err) {
     console.error("解析文件内容时出错:", err.message);
   }

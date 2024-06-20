@@ -2,6 +2,8 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 import inquirer from "inquirer";
+import { SingleBar } from "cli-progress";
+import Table from "cli-table3";
 
 import { convertLakeboardToJson } from "./convertLakeboardToJson.js";
 import { convertLakeMindToContent } from "./convertLakeJsonToContentJson.js";
@@ -86,25 +88,77 @@ prompt([
           const selectedFiles = answers.selectedFiles
             .filter((file) => file !== "all")
             .map((file) => path.join(rootDir, file));
-          console.log("选择的文件:");
-          console.log("====================================");
-          selectedFiles.forEach((file) => {
-            console.log(file);
+          // console.log("选择的文件:");
+          // console.log("====================================");
+          // selectedFiles.forEach((file) => {
+          //   console.log(file);
+          // });
+          // console.log("====================================");
+
+          // 使用 cli-progress 创建总进度条
+          const totalProgressBar = new SingleBar({
+            format: "{bar} {percentage}% | ETA: {eta}s | {value}/{total} Files",
+            barCompleteChar: "\u2588",
+            barIncompleteChar: "\u2591",
+            hideCursor: true,
           });
-          console.log("====================================");
-          for (const file of selectedFiles) {
+
+          totalProgressBar.start(selectedFiles.length, 0);
+
+          // 使用 cli-table3 创建表格
+          const table = new Table({
+            head: [
+              {
+                content: "文件名称",
+                hAlign: "center",
+                style: { head: ["green"] },
+              },
+              {
+                content: "文件路径",
+                hAlign: "center",
+                style: { head: ["green"] },
+              },
+              {
+                content: "保存路径",
+                hAlign: "center",
+                style: { head: ["green"] },
+              },
+              {
+                content: "处理结果",
+                hAlign: "center",
+                style: { head: ["green"] },
+              },
+            ],
+            colWidths: [30, 60, 60, 10],
+          });
+
+          // 处理每个文件
+          for (let i = 0; i < selectedFiles.length; i++) {
+            const file = selectedFiles[i];
             const fileName = path.basename(file, ".lakeboard");
-            const LakeJson = await convertLakeboardToJson(file);
-            // 生成对应目录
             const savePath = path.join(__dirname, "..", "result", fileName);
-            // 生成对应content.json文件到savePath目录
-            await convertLakeMindToContent(LakeJson, savePath).then(
-              async () => {
-                console.log(`成功生成 ${fileName} 的 content.json 文件`);
-                await generateXMindFile(savePath);
-              }
-            );
+            const rowData = [fileName, file, `${savePath}.xmind`, "处理中"];
+
+            try {
+              const LakeJson = await convertLakeboardToJson(file);
+              await convertLakeMindToContent(LakeJson, savePath);
+              await generateXMindFile(savePath);
+              rowData[3] = "完成";
+            } catch (error) {
+              console.error(`处理文件 ${file} 时发生错误:`, error);
+              rowData[3] = "失败";
+            }
+
+            // 更新表格和进度条
+            table.push(rowData);
+            totalProgressBar.update(i + 1);
           }
+
+          // 结束总进度条
+          totalProgressBar.stop();
+
+          // 输出表格
+          console.log(table.toString());
         })
         .catch((err) => {
           console.error("选择文件时发生错误:", err);
