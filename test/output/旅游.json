@@ -1,0 +1,1170 @@
+{
+  "version": "2.0.0",
+  "data": [
+    {
+      "type": "geometry",
+      "html": "<div style=\"text-align:center;\"><span style=\"font-size:16px; font-weight:bold;\">🍁 北京&nbsp; &nbsp;</span></div><div style=\"text-align:center;\"><span style=\"font-size:16px;\">四日游</span></div>",
+      "shape": "circle",
+      "fill": {
+        "color": "#FCF6E1"
+      },
+      "stroke": {
+        "color": "transparent"
+      },
+      "id": "90c8f329-6651-432d-a2ff-40fe1fcf8778",
+      "x": 1343.0687555105465,
+      "y": 293.7592172641077,
+      "width": 120,
+      "height": 120,
+      "constraints": {
+        "proportion": true
+      },
+      "zIndex": 0
+    },
+    {
+      "id": "365f813e-a4e2-4289-ab22-f5ff46c9c082",
+      "x": 902.6474508051716,
+      "y": 473.38129988846765,
+      "html": "<div style=\"text-align:center;\"><span style=\"font-weight:bold;\">&nbsp;</span>☀️&nbsp;<span style=\"font-weight:bold;\">Day 1&nbsp;</span></div>",
+      "type": "mindmap",
+      "defaultContentStyle": {
+        "color": "rgb(38, 38, 38)"
+      },
+      "border": {
+        "fill": "#EFE8FA",
+        "shape": "capsule"
+      },
+      "children": [
+        {
+          "layout": {
+            "quadrant": 1
+          },
+          "treeEdge": {
+            "stroke": "#A287E1"
+          },
+          "id": "4b877554-16eb-474d-96a5-9ce020329617",
+          "children": [],
+          "border": {
+            "shape": "rect",
+            "stroke-width": 1,
+            "stroke": "transparent"
+          },
+          "html": "<div style=\"text-align:left;\"><span style=\"color:rgb(140, 140, 140);\">打卡点1</span></div><div style=\"text-align:left;\"><span style=\"color:rgb(140, 140, 140);\">2小时</span></div>",
+          "x": -385.3051003114065,
+          "y": 472.5,
+          "zIndex": 7
+        },
+        {
+          "layout": {
+            "quadrant": 1
+          },
+          "id": "df67c032-42a8-4c9c-ba2d-8c31a373d703",
+          "children": [],
+          "border": {
+            "shape": "rect",
+            "stroke-width": 1,
+            "stroke": "transparent"
+          },
+          "html": "<div style=\"text-align:left;\"><span style=\"color:rgb(140, 140, 140);\">打卡点2</span></div><div style=\"text-align:left;\"><span style=\"color:rgb(140, 140, 140);\">20分钟</span><br></div>",
+          "treeEdge": {
+            "stroke": "#A287E1"
+          },
+          "x": -385.3051003114065,
+          "y": 540.5,
+          "zIndex": 6
+        },
+        {
+          "html": "<div style=\"text-align:left;\"><span style=\"color:rgb(140, 140, 140);\">打卡点3</span></div><div style=\"text-align:left;\"><span style=\"color:rgb(140, 140, 140);\">2小时</span></div>",
+          "layout": {
+            "quadrant": 1
+          },
+          "border": {
+            "shape": "rect",
+            "stroke": "transparent",
+            "stroke-width": 1
+          },
+          "treeEdge": {
+            "stroke": "#A287E1"
+          },
+          "id": "810c6818-28bd-4d65-ad28-c572d3638913",
+          "children": [],
+          "x": -385.3051003114065,
+          "y": 608.5,
+          "zIndex": 5
+        },
+        {
+          "html": "<div style=\"text-align:left;\"><span style=\"color:rgb(140, 140, 140);\">打卡点4</span></div><div style=\"text-align:left;\"><span style=\"color:rgb(140, 140, 140);\">1小时</span></div>",
+          "layout": {
+            "quadrant": 1
+          },
+          "border": {
+            "shape": "rect",
+            "stroke": "transparent",
+            "stroke-width": 1
+          },
+          "id": "445684b9-a283-43a8-a8cf-248dff9e67e2",
+          "children": [],
+          "treeEdge": {
+            "stroke": "#A287E1"
+          },
+          "x": -385.3051003114065,
+          "y": 676.5,
+          "zIndex": 4
+        },
+        {
+          "html": "<div style=\"text-align:left;\"><span style=\"color:rgb(140, 140, 140);\">打卡点5</span></div><div><div style=\"text-align:left;\"><span style=\"color:rgb(140, 140, 140);\">30分钟</span><br></div></div>",
+          "layout": {
+            "quadrant": 1
+          },
+          "border": {
+            "shape": "rect",
+            "stroke": "transparent",
+            "stroke-width": 1
+          },
+          "id": "7e7a6e8e-e1fe-4769-bf9d-36b4a8bf94d4",
+          "children": [],
+          "treeEdge": {
+            "stroke": "#A287E1"
+          },
+          "x": -385.3051003114065,
+          "y": 744.5,
+          "zIndex": 3
+        },
+        {
+          "html": "<div style=\"text-align:left;\"><span style=\"color:rgb(140, 140, 140);\">打卡点6</span></div><div style=\"text-align:left;\"><span style=\"color:rgb(140, 140, 140);\">1小时</span><br></div>",
+          "layout": {
+            "quadrant": 1
+          },
+          "border": {
+            "shape": "rect",
+            "stroke": "transparent",
+            "stroke-width": 1
+          },
+          "id": "c8bc8395-653b-459d-8e8c-daf6950b868e",
+          "children": [],
+          "treeEdge": {
+            "stroke": "#A287E1"
+          },
+          "x": -385.3051003114065,
+          "y": 812.5,
+          "zIndex": 2
+        },
+        {
+          "html": "<div style=\"text-align:left;\"><span style=\"color:rgb(140, 140, 140);\">打卡点7</span></div><div style=\"text-align:left;\"><span style=\"color:rgb(140, 140, 140);\">2小时</span><br></div>",
+          "layout": {
+            "quadrant": 1
+          },
+          "border": {
+            "shape": "rect",
+            "stroke": "transparent",
+            "stroke-width": 1
+          },
+          "id": "0286c785-5f3d-45c6-9220-7c40b5d3fbf8",
+          "children": [],
+          "treeEdge": {
+            "stroke": "#A287E1"
+          },
+          "x": -385.3051003114065,
+          "y": 880.5,
+          "zIndex": 1
+        }
+      ],
+      "layout": {
+        "type": "indent",
+        "direction": [
+          1,
+          1
+        ],
+        "quadrantConstraint": [
+          1
+        ]
+      },
+      "treeEdge": {
+        "shape": "polyline"
+      },
+      "zIndex": 8
+    },
+    {
+      "type": "line",
+      "shape": "curve",
+      "source": {
+        "id": "77d7807a-1364-4792-be66-a9772bfda929",
+        "connection": [
+          0.8058981488062545,
+          1
+        ]
+      },
+      "target": {
+        "id": "365f813e-a4e2-4289-ab22-f5ff46c9c082",
+        "connection": "N",
+        "marker": "arrow"
+      },
+      "id": "3b2594f0-432f-48e9-bfdd-1803cb4bd55d",
+      "stroke": {
+        "style": "dash",
+        "color": "#A287E1"
+      },
+      "controlPoints": [
+        [
+          947.9423582454843,
+          425.4799021833895
+        ],
+        [
+          957.9423582454843,
+          411.4799021833895
+        ],
+        [
+          948.9423582454843,
+          407.4799021833895
+        ],
+        [
+          934.9423582454843,
+          434.4799021833895
+        ]
+      ],
+      "zIndex": 9
+    },
+    {
+      "id": "492125ef-f1f3-4090-94f7-5db1d62dbcaf",
+      "x": 1209.8554862863452,
+      "y": 473.38129988846765,
+      "html": "<div style=\"text-align:center;\"><span style=\"font-weight:bold;\">&nbsp;⛅️ Day 2&nbsp;</span></div>",
+      "type": "mindmap",
+      "defaultContentStyle": {
+        "color": "rgb(38, 38, 38)"
+      },
+      "border": {
+        "fill": "rgba(232,238,252,1)",
+        "shape": "capsule"
+      },
+      "children": [
+        {
+          "layout": {
+            "quadrant": 1
+          },
+          "treeEdge": {
+            "stroke": "#6F81DB"
+          },
+          "id": "775bfad8-d15a-486a-9b84-cc47e7aa3329",
+          "children": [],
+          "border": {
+            "shape": "rect",
+            "stroke-width": 1,
+            "stroke": "transparent"
+          },
+          "html": "<div style=\"text-align:left;\"><span style=\"color:rgb(140, 140, 140);\">打卡点1</span></div><div style=\"text-align:left;\"><span style=\"color:rgb(140, 140, 140);\">12小时</span></div>",
+          "x": -64.59706483023274,
+          "y": 472.5,
+          "zIndex": 15
+        },
+        {
+          "layout": {
+            "quadrant": 1
+          },
+          "id": "010f6c0b-fe9e-4845-9579-dcc82feb1f24",
+          "children": [],
+          "border": {
+            "shape": "rect",
+            "stroke-width": 1,
+            "stroke": "transparent"
+          },
+          "html": "<div style=\"text-align:left;\"><div><span style=\"color:rgb(140, 140, 140);\">打卡点2</span></div><div><span style=\"color:rgb(140, 140, 140);\">20分钟</span><br></div></div>",
+          "treeEdge": {
+            "stroke": "#6F81DB"
+          },
+          "x": -64.59706483023274,
+          "y": 540.5,
+          "zIndex": 14
+        },
+        {
+          "html": "<div style=\"text-align:left;\"><div><span style=\"color:rgb(140, 140, 140);\">打卡点3</span></div><div><span style=\"color:rgb(140, 140, 140);\">20分钟</span><br></div></div>",
+          "layout": {
+            "quadrant": 1
+          },
+          "border": {
+            "shape": "rect",
+            "stroke": "transparent",
+            "stroke-width": 1
+          },
+          "treeEdge": {
+            "stroke": "#6F81DB"
+          },
+          "id": "b7c4a1ff-5ca2-4729-a19d-be51ca579d4d",
+          "children": [],
+          "x": -64.59706483023274,
+          "y": 608.5,
+          "zIndex": 13
+        },
+        {
+          "html": "<div style=\"text-align:left;\"><div><span style=\"color:rgb(140, 140, 140);\">打卡点4</span></div><div><span style=\"color:rgb(140, 140, 140);\">20分钟</span><br></div></div>",
+          "layout": {
+            "quadrant": 1
+          },
+          "border": {
+            "shape": "rect",
+            "stroke": "transparent",
+            "stroke-width": 1
+          },
+          "id": "e6be6784-d387-4c66-a1d0-02ac243c21a1",
+          "children": [],
+          "treeEdge": {
+            "stroke": "#6F81DB"
+          },
+          "x": -64.59706483023274,
+          "y": 676.5,
+          "zIndex": 12
+        },
+        {
+          "html": "<div style=\"text-align:left;\"><div><span style=\"color:rgb(140, 140, 140);\">打卡点5</span></div><div><span style=\"color:rgb(140, 140, 140);\">20分钟</span><br></div></div>",
+          "layout": {
+            "quadrant": 1
+          },
+          "border": {
+            "shape": "rect",
+            "stroke": "transparent",
+            "stroke-width": 1
+          },
+          "id": "3bb1b949-444b-48df-813a-0b46bde5eed9",
+          "children": [],
+          "treeEdge": {
+            "stroke": "#6F81DB"
+          },
+          "x": -64.59706483023274,
+          "y": 744.5,
+          "zIndex": 11
+        },
+        {
+          "html": "<div style=\"text-align:left;\"><div><span style=\"color:rgb(140, 140, 140);\">打卡点6</span></div><div><span style=\"color:rgb(140, 140, 140);\">20分钟</span><br></div></div>",
+          "layout": {
+            "quadrant": 1
+          },
+          "border": {
+            "shape": "rect",
+            "stroke": "transparent",
+            "stroke-width": 1
+          },
+          "id": "7445e61a-f3e7-466a-bae2-fc02b3208226",
+          "children": [],
+          "treeEdge": {
+            "stroke": "#6F81DB"
+          },
+          "x": -64.59706483023274,
+          "y": 812.5,
+          "zIndex": 10
+        }
+      ],
+      "layout": {
+        "type": "indent",
+        "direction": [
+          1,
+          1
+        ],
+        "quadrantConstraint": [
+          1
+        ]
+      },
+      "treeEdge": {
+        "shape": "polyline"
+      },
+      "zIndex": 16
+    },
+    {
+      "id": "bab40da6-d784-4a46-a612-b5b57500b6a1",
+      "x": 1514.3915511773423,
+      "y": 473.38129988846765,
+      "html": "<div style=\"text-align:center;\"><span style=\"font-weight:bold;\">&nbsp;🌤 Day 3&nbsp;</span></div>",
+      "type": "mindmap",
+      "defaultContentStyle": {
+        "color": "rgb(38, 38, 38)"
+      },
+      "border": {
+        "fill": "#E4F7F5",
+        "shape": "capsule"
+      },
+      "children": [
+        {
+          "layout": {
+            "quadrant": 1
+          },
+          "treeEdge": {
+            "stroke": "#6EC4C4"
+          },
+          "id": "4693b1d3-8ecf-4269-b900-bbfff30f78d3",
+          "children": [],
+          "border": {
+            "shape": "rect",
+            "stroke-width": 1,
+            "stroke": "transparent"
+          },
+          "html": "<div style=\"text-align:left;\"><div><span style=\"color:rgb(140, 140, 140);\">打卡点1</span></div><div><span style=\"color:rgb(140, 140, 140);\">20分钟</span><br></div></div>",
+          "x": 227.93900006076422,
+          "y": 472.5,
+          "zIndex": 21
+        },
+        {
+          "layout": {
+            "quadrant": 1
+          },
+          "id": "438fed9d-70ae-4a8d-8dd2-6b94ce2cdca4",
+          "children": [],
+          "border": {
+            "shape": "rect",
+            "stroke-width": 1,
+            "stroke": "transparent"
+          },
+          "html": "<div style=\"text-align:left;\"><div><span style=\"color:rgb(140, 140, 140);\">打卡点2</span></div><div><span style=\"color:rgb(140, 140, 140);\">20分钟</span><br></div></div>",
+          "treeEdge": {
+            "stroke": "#6EC4C4"
+          },
+          "x": 227.93900006076422,
+          "y": 540.5,
+          "zIndex": 20
+        },
+        {
+          "html": "<div style=\"text-align:left;\"><div><span style=\"color:rgb(140, 140, 140);\">打卡点3</span></div><div><span style=\"color:rgb(140, 140, 140);\">20分钟</span><br></div></div>",
+          "layout": {
+            "quadrant": 1
+          },
+          "border": {
+            "shape": "rect",
+            "stroke": "transparent",
+            "stroke-width": 1
+          },
+          "treeEdge": {
+            "stroke": "#6EC4C4"
+          },
+          "id": "1bf0163a-c3cf-4451-baf8-2816182340da",
+          "children": [],
+          "x": 227.93900006076422,
+          "y": 608.5,
+          "zIndex": 19
+        },
+        {
+          "html": "<div style=\"text-align:left;\"><div><span style=\"color:rgb(140, 140, 140);\">打卡点4</span></div><div><span style=\"color:rgb(140, 140, 140);\">20分钟</span><br></div></div>",
+          "layout": {
+            "quadrant": 1
+          },
+          "border": {
+            "shape": "rect",
+            "stroke": "transparent",
+            "stroke-width": 1
+          },
+          "id": "850de4bc-765d-4703-9d02-f9625265ad65",
+          "children": [],
+          "treeEdge": {
+            "stroke": "#6EC4C4"
+          },
+          "x": 227.93900006076422,
+          "y": 676.5,
+          "zIndex": 18
+        },
+        {
+          "html": "<div style=\"text-align:left;\"><div><span style=\"color:rgb(140, 140, 140);\">打卡点5</span></div><div><span style=\"color:rgb(140, 140, 140);\">20分钟</span><br></div></div>",
+          "layout": {
+            "quadrant": 1
+          },
+          "border": {
+            "shape": "rect",
+            "stroke": "transparent",
+            "stroke-width": 1
+          },
+          "id": "5f32a5bc-0cd9-46cf-a5d7-fb99c6d7cd45",
+          "children": [],
+          "treeEdge": {
+            "stroke": "#6EC4C4"
+          },
+          "x": 227.93900006076422,
+          "y": 744.5,
+          "zIndex": 17
+        }
+      ],
+      "layout": {
+        "type": "indent",
+        "direction": [
+          1,
+          1
+        ],
+        "quadrantConstraint": [
+          1
+        ]
+      },
+      "treeEdge": {
+        "shape": "polyline"
+      },
+      "zIndex": 22
+    },
+    {
+      "type": "line",
+      "shape": "curve",
+      "source": {
+        "id": "90c8f329-6651-432d-a2ff-40fe1fcf8778",
+        "connection": [
+          0.05,
+          0.7375000007245386
+        ]
+      },
+      "target": {
+        "id": "492125ef-f1f3-4090-94f7-5db1d62dbcaf",
+        "connection": "N"
+      },
+      "id": "15a7aa97-d98d-4588-a265-49d4ce835314",
+      "stroke": {
+        "style": "dash",
+        "color": "#BFBFBF"
+      },
+      "controlPoints": [],
+      "zIndex": 23
+    },
+    {
+      "type": "line",
+      "shape": "curve",
+      "source": {
+        "id": "90c8f329-6651-432d-a2ff-40fe1fcf8778",
+        "connection": [
+          0.9583333333333334,
+          0.7203697598391211
+        ]
+      },
+      "target": {
+        "id": "bab40da6-d784-4a46-a612-b5b57500b6a1",
+        "connection": "N"
+      },
+      "id": "efa57cd6-5023-409d-a0c9-ad50fe573357",
+      "stroke": {
+        "style": "dash",
+        "color": "#BFBFBF"
+      },
+      "controlPoints": [],
+      "zIndex": 24
+    },
+    {
+      "id": "4844bd78-f8bd-4f20-b285-3abf47f9ecb8",
+      "x": 1822.8739942705952,
+      "y": 473.38129988846765,
+      "html": "<div style=\"text-align:center;\"><span style=\"font-weight:bold;\">&nbsp;🌧 Day 4&nbsp;</span></div>",
+      "type": "mindmap",
+      "defaultContentStyle": {
+        "color": "rgb(38, 38, 38)"
+      },
+      "border": {
+        "fill": "#E6F4FC",
+        "shape": "capsule"
+      },
+      "children": [
+        {
+          "layout": {
+            "quadrant": 1
+          },
+          "treeEdge": {
+            "stroke": "#69B1E4"
+          },
+          "id": "ed2b0b2b-0653-455e-80ae-dff5676f0cd7",
+          "children": [],
+          "border": {
+            "shape": "rect",
+            "stroke-width": 1,
+            "stroke": "transparent"
+          },
+          "html": "<div style=\"text-align:left;\"><div><span style=\"color:rgb(140, 140, 140);\">打卡点1</span></div><div><span style=\"color:rgb(140, 140, 140);\">20分钟</span><br></div></div>",
+          "x": 536.4214431540171,
+          "y": 472.5,
+          "zIndex": 27
+        },
+        {
+          "layout": {
+            "quadrant": 1
+          },
+          "id": "a6580c03-b419-4bbe-9f8c-312a86a2b9a4",
+          "children": [],
+          "border": {
+            "shape": "rect",
+            "stroke-width": 1,
+            "stroke": "transparent"
+          },
+          "html": "<div style=\"text-align:left;\"><div><span style=\"color:rgb(140, 140, 140);\">打卡点2</span></div><div><span style=\"color:rgb(140, 140, 140);\">20分钟</span><br></div></div>",
+          "treeEdge": {
+            "stroke": "#69B1E4"
+          },
+          "x": 536.4214431540171,
+          "y": 540.5,
+          "zIndex": 26
+        },
+        {
+          "html": "<div style=\"text-align:left;\"><div><span style=\"color:rgb(140, 140, 140);\">打卡点3</span></div><div><span style=\"color:rgb(140, 140, 140);\">20分钟</span><br></div></div>",
+          "layout": {
+            "quadrant": 1
+          },
+          "border": {
+            "shape": "rect",
+            "stroke": "transparent",
+            "stroke-width": 1
+          },
+          "treeEdge": {
+            "stroke": "#69B1E4"
+          },
+          "id": "8313a46d-6843-4d20-8f34-9481db3d52c8",
+          "children": [],
+          "x": 536.4214431540171,
+          "y": 608.5,
+          "zIndex": 25
+        }
+      ],
+      "layout": {
+        "type": "indent",
+        "direction": [
+          1,
+          1
+        ],
+        "quadrantConstraint": [
+          1
+        ]
+      },
+      "treeEdge": {
+        "shape": "polyline"
+      },
+      "zIndex": 28
+    },
+    {
+      "type": "line",
+      "shape": "straight",
+      "source": {
+        "connection": "E",
+        "id": "297327e9-e14b-4390-821c-827442557d95"
+      },
+      "target": {
+        "id": "4b877554-16eb-474d-96a5-9ce020329617"
+      },
+      "id": "0100dddf-bc36-475f-a21e-30f80c908bc5",
+      "stroke": {
+        "style": "dash",
+        "color": "#A287E1"
+      },
+      "zIndex": 29
+    },
+    {
+      "type": "line",
+      "shape": "straight",
+      "source": {
+        "connection": "E",
+        "id": "3243ce1c-b943-4653-97ed-52fb0f2d148d"
+      },
+      "target": {
+        "id": "810c6818-28bd-4d65-ad28-c572d3638913"
+      },
+      "id": "e2c257ff-c46d-4d63-813c-9dd8b1ed8f4e",
+      "stroke": {
+        "style": "dash",
+        "color": "#A287E1"
+      },
+      "zIndex": 30
+    },
+    {
+      "type": "line",
+      "shape": "straight",
+      "source": {
+        "connection": "E",
+        "id": "e8a0c1fc-60b5-446c-9a3c-273a8397b6e1"
+      },
+      "target": {
+        "id": "7e7a6e8e-e1fe-4769-bf9d-36b4a8bf94d4"
+      },
+      "id": "110c5b34-b475-47b6-927f-0fe004245c59",
+      "stroke": {
+        "style": "dash",
+        "color": "#A287E1"
+      },
+      "zIndex": 31
+    },
+    {
+      "type": "line",
+      "shape": "straight",
+      "source": {
+        "id": "996bb6d5-5aa0-482e-a48b-1f4d29e5b272",
+        "connection": "E"
+      },
+      "target": {
+        "id": "775bfad8-d15a-486a-9b84-cc47e7aa3329"
+      },
+      "id": "af700258-31b9-4449-bafa-a61e028fdb27",
+      "stroke": {
+        "style": "dash",
+        "color": "#6F81DB"
+      },
+      "zIndex": 32
+    },
+    {
+      "type": "line",
+      "shape": "straight",
+      "source": {
+        "id": "e75144ce-946e-40af-99a1-31ecd09ce27f",
+        "connection": "E"
+      },
+      "target": {
+        "id": "3bb1b949-444b-48df-813a-0b46bde5eed9"
+      },
+      "id": "0878ad00-145d-4737-b522-59d679f04dc3",
+      "stroke": {
+        "style": "dash",
+        "color": "#6F81DB"
+      },
+      "zIndex": 33
+    },
+    {
+      "type": "line",
+      "shape": "straight",
+      "source": {
+        "id": "95cd380f-06d4-4d45-baa2-6f3fcd39f61b",
+        "connection": "E"
+      },
+      "target": {
+        "id": "b7c4a1ff-5ca2-4729-a19d-be51ca579d4d"
+      },
+      "id": "d2bd102c-ecab-4e5f-9c75-089d1fa57061",
+      "stroke": {
+        "style": "dash",
+        "color": "#6F81DB"
+      },
+      "zIndex": 34
+    },
+    {
+      "type": "line",
+      "shape": "straight",
+      "source": {
+        "id": "4693b1d3-8ecf-4269-b900-bbfff30f78d3"
+      },
+      "target": {
+        "id": "db90285b-8c04-4fac-8f24-24eefdbf005f",
+        "connection": "E"
+      },
+      "id": "dcfb2f5d-38b2-4745-a2f6-7799f34e18d9",
+      "stroke": {
+        "style": "dash",
+        "color": "#6EC4C4"
+      },
+      "zIndex": 35
+    },
+    {
+      "type": "line",
+      "shape": "straight",
+      "source": {
+        "id": "850de4bc-765d-4703-9d02-f9625265ad65",
+        "connection": "W"
+      },
+      "target": {
+        "id": "75052898-368c-4662-88f0-b08e1e26ca9c",
+        "connection": "E"
+      },
+      "id": "1dd19f68-412b-4959-b32e-e3b0c84a2a51",
+      "stroke": {
+        "style": "dash",
+        "color": "#6EC4C4"
+      },
+      "zIndex": 36
+    },
+    {
+      "type": "line",
+      "shape": "straight",
+      "source": {
+        "id": "8313a46d-6843-4d20-8f34-9481db3d52c8"
+      },
+      "target": {
+        "id": "c4841fc2-281e-476c-97fe-81e897574b0e",
+        "connection": "E"
+      },
+      "id": "dd767ecb-4912-4f8c-be6d-cb3c9a55c663",
+      "stroke": {
+        "style": "dash",
+        "color": "#69B1E4"
+      },
+      "zIndex": 37
+    },
+    {
+      "type": "line",
+      "shape": "straight",
+      "source": {
+        "id": "ed2b0b2b-0653-455e-80ae-dff5676f0cd7"
+      },
+      "target": {
+        "id": "6f825e7a-919e-41ca-9202-b31972ab1115",
+        "connection": "E"
+      },
+      "id": "ce61d118-a174-4542-8c5e-c5aaefd91a92",
+      "stroke": {
+        "style": "dash",
+        "color": "#69B1E4"
+      },
+      "zIndex": 38
+    },
+    {
+      "type": "line",
+      "shape": "curve",
+      "source": {
+        "id": "90c8f329-6651-432d-a2ff-40fe1fcf8778",
+        "connection": "E"
+      },
+      "target": {
+        "id": "4844bd78-f8bd-4f20-b285-3abf47f9ecb8",
+        "connection": [
+          0.0847457627118644,
+          0.0569467866551582
+        ]
+      },
+      "id": "dde4f485-fedd-465b-ae88-dc0c2828e24d",
+      "stroke": {
+        "style": "dash",
+        "color": "#BFBFBF"
+      },
+      "controlPoints": [],
+      "zIndex": 39
+    },
+    {
+      "type": "text",
+      "html": "<span style=\"font-size:16px; color:rgb(140, 140, 140);\">🚄 北京站</span>",
+      "id": "77d7807a-1364-4792-be66-a9772bfda929",
+      "x": 847.5994542504975,
+      "y": 364.4799020964449,
+      "width": 93.328125,
+      "height": 37.500000086944624,
+      "rotate": 0,
+      "zIndex": 40
+    },
+    {
+      "type": "line",
+      "shape": "curve",
+      "source": {
+        "id": "90c8f329-6651-432d-a2ff-40fe1fcf8778",
+        "connection": "W"
+      },
+      "target": {
+        "id": "365f813e-a4e2-4289-ab22-f5ff46c9c082",
+        "connection": [
+          0.9222257630679327,
+          0.06976744186046512
+        ]
+      },
+      "id": "4deeb60b-13a3-4a82-a8ea-6b1c62b3f423",
+      "stroke": {
+        "style": "dash",
+        "color": "#BFBFBF"
+      },
+      "controlPoints": [],
+      "zIndex": 41
+    },
+    {
+      "type": "line",
+      "shape": "curve",
+      "source": {
+        "id": "ee930e8a-1e4f-40c0-9037-d800da756fcb",
+        "connection": "S",
+        "marker": "arrow"
+      },
+      "target": {
+        "id": "4844bd78-f8bd-4f20-b285-3abf47f9ecb8",
+        "connection": "N"
+      },
+      "id": "075d0b53-c95f-4a22-ac5e-d0195ccf5c36",
+      "stroke": {
+        "style": "dash",
+        "color": "#69B1E4"
+      },
+      "controlPoints": [],
+      "zIndex": 42
+    },
+    {
+      "type": "text",
+      "html": "<span style=\"font-size:16px; color:rgb(140, 140, 140);\">✈️ 大兴机场</span>",
+      "id": "ee930e8a-1e4f-40c0-9037-d800da756fcb",
+      "x": 1865.2099317705952,
+      "y": 394.4799020964449,
+      "zIndex": 43
+    },
+    {
+      "type": "image",
+      "image": {
+        "src": "https://cdn.nlark.com/yuque/0/2022/png/519985/1647325112802-84b6c2e5-46e9-4b37-9f1f-5b6fb58efefd.png",
+        "naturalWidth": 1200,
+        "naturalHeight": 712,
+        "uploadInfo": {
+          "hash": "38cd800fe5ed6f7534fe1cc11ee26156f335242959458f159659631e000e3dc6",
+          "fileName": "image.png",
+          "fileType": "image/png",
+          "fileSize": 2598139,
+          "localTempSrc": "blob:https://www.yuque.com/7ccc8abb-719c-4f13-bb57-645c930c8027",
+          "state": -2
+        },
+        "firstInsertRatio": 1
+      },
+      "width": 117.1189405790704,
+      "height": 69.49057141024842,
+      "x": 798.0490347892198,
+      "y": 520.7335177112055,
+      "constraints": {
+        "proportion": true
+      },
+      "id": "297327e9-e14b-4390-821c-827442557d95",
+      "rotate": 0,
+      "zIndex": 44
+    },
+    {
+      "type": "image",
+      "image": {
+        "src": "https://cdn.nlark.com/yuque/0/2022/png/519985/1647325269462-b8d191aa-f8f0-4473-9e5c-7ac7ff59eeb4.png",
+        "naturalWidth": 1870,
+        "naturalHeight": 1182,
+        "uploadInfo": {
+          "hash": "b83f9dca4f0e19aa4e1a7de5a884d30e434e8ebcb7d8d87ecea6bfa9fea78d79",
+          "fileName": "image.png",
+          "fileType": "image/png",
+          "fileSize": 6961046,
+          "localTempSrc": "blob:https://www.yuque.com/e9273182-4972-4bfa-aca8-d06988c66c9c",
+          "state": -2
+        },
+        "firstInsertRatio": 1
+      },
+      "width": 122.82207605473096,
+      "height": 77.63406090732191,
+      "x": 1114.2347627708161,
+      "y": 517.3226748324781,
+      "constraints": {
+        "proportion": true
+      },
+      "id": "996bb6d5-5aa0-482e-a48b-1f4d29e5b272",
+      "rotate": 0,
+      "zIndex": 45
+    },
+    {
+      "type": "image",
+      "image": {
+        "src": "https://cdn.nlark.com/yuque/0/2022/png/519985/1647325316341-3442d490-cb10-41b1-9c08-8691ba09b8fb.png",
+        "naturalWidth": 1748,
+        "naturalHeight": 1012,
+        "uploadInfo": {
+          "hash": "51b31193a4c018f512f5667b0d6e6e557cc3efce95b3e9cf3ff6caffba90fc99",
+          "fileName": "image.png",
+          "fileType": "image/png",
+          "fileSize": 7212734,
+          "localTempSrc": "blob:https://www.yuque.com/5adf26c0-e209-4ae4-bd67-ba24b7500f1f",
+          "state": -2
+        },
+        "firstInsertRatio": 1
+      },
+      "width": 122.82207605473094,
+      "height": 71.1075177158968,
+      "x": 1114.2347627708161,
+      "y": 658.6814579351224,
+      "constraints": {
+        "proportion": true
+      },
+      "id": "95cd380f-06d4-4d45-baa2-6f3fcd39f61b",
+      "rotate": 0,
+      "zIndex": 46
+    },
+    {
+      "type": "image",
+      "image": {
+        "src": "https://cdn.nlark.com/yuque/0/2022/png/519985/1647325388107-b075855b-dce6-4859-ac0d-043654933df0.png",
+        "naturalWidth": 1432,
+        "naturalHeight": 820,
+        "uploadInfo": {
+          "hash": "5a388aa91a9fe8c62704edbd18f3d30ab9241708cabb495743b8d7d6dd7324d8",
+          "fileName": "image.png",
+          "fileType": "image/png",
+          "fileSize": 4252885,
+          "localTempSrc": "blob:https://www.yuque.com/9c204629-d835-4d8f-b4ec-6920180d0c90",
+          "state": -2
+        },
+        "firstInsertRatio": 1
+      },
+      "width": 108.75323887820588,
+      "height": 62.27489935763182,
+      "x": 1424.4971254492698,
+      "y": 524.2730671975024,
+      "constraints": {
+        "proportion": true
+      },
+      "id": "db90285b-8c04-4fac-8f24-24eefdbf005f",
+      "rotate": 0,
+      "zIndex": 47
+    },
+    {
+      "type": "image",
+      "image": {
+        "src": "https://cdn.nlark.com/yuque/0/2022/png/519985/1647325432582-f59c83c5-40dd-4574-8120-af9d9b45ef84.png",
+        "naturalWidth": 1480,
+        "naturalHeight": 860,
+        "uploadInfo": {
+          "hash": "b962d0c0653e8e9068917ef7cac59100336c2e61a71e87a33f72dd37c828434b",
+          "fileName": "image.png",
+          "fileType": "image/png",
+          "fileSize": 4455626,
+          "localTempSrc": "blob:https://www.yuque.com/d4cf9d34-dd5f-40c4-a4a2-cf46d4d63298",
+          "state": -2
+        },
+        "firstInsertRatio": 1
+      },
+      "width": 108.75323887820582,
+      "height": 63.1944496184169,
+      "x": 1424.4971254492698,
+      "y": 731.3892758065273,
+      "constraints": {
+        "proportion": true
+      },
+      "id": "75052898-368c-4662-88f0-b08e1e26ca9c",
+      "rotate": 0,
+      "zIndex": 48
+    },
+    {
+      "type": "image",
+      "image": {
+        "src": "https://cdn.nlark.com/yuque/0/2022/png/519985/1647325555408-33bd310c-9769-4ec5-a29c-f218d543a14e.png",
+        "naturalWidth": 1866,
+        "naturalHeight": 1068,
+        "uploadInfo": {
+          "hash": "45d6c08b9a09a414551f877d12c5175faf51c9170dab62299af1011af38ad211",
+          "fileName": "image.png",
+          "fileType": "image/png",
+          "fileSize": 8884518,
+          "localTempSrc": "blob:https://www.yuque.com/ed883936-7d42-4396-954e-d7e8a18c8e2a",
+          "state": -2
+        },
+        "firstInsertRatio": 1
+      },
+      "width": 94.43390493276297,
+      "height": 54.0489873891698,
+      "x": 1757.5764251296591,
+      "y": 666.7107230984858,
+      "constraints": {
+        "proportion": true
+      },
+      "id": "c4841fc2-281e-476c-97fe-81e897574b0e",
+      "rotate": 0,
+      "zIndex": 49
+    },
+    {
+      "type": "image",
+      "image": {
+        "src": "https://cdn.nlark.com/yuque/0/2022/png/519985/1647325722758-ae6be484-6f62-4582-ae58-808a36e10762.png",
+        "naturalWidth": 1058,
+        "naturalHeight": 548,
+        "uploadInfo": {
+          "hash": "eeeb61e9d635b5e51865624376301cfe2405e0e3fa7597f78021a7ecbe75e929",
+          "fileName": "image.png",
+          "fileType": "image/png",
+          "fileSize": 2680564,
+          "localTempSrc": "blob:https://www.yuque.com/fe28210c-bbaf-45d5-b79a-39e5b1c705fa",
+          "state": -2
+        },
+        "firstInsertRatio": 1
+      },
+      "width": 135.15748361187752,
+      "height": 70.0059555948099,
+      "x": 780.0104917564126,
+      "y": 796.194226130909,
+      "constraints": {
+        "proportion": true
+      },
+      "id": "e8a0c1fc-60b5-446c-9a3c-273a8397b6e1",
+      "rotate": 0,
+      "zIndex": 50
+    },
+    {
+      "type": "image",
+      "image": {
+        "src": "https://cdn.nlark.com/yuque/0/2022/png/519985/1647325740224-37014c72-e49f-47c8-8231-bd1fa3dd95f8.png",
+        "naturalWidth": 1056,
+        "naturalHeight": 622,
+        "uploadInfo": {
+          "hash": "881a8160d6ca4c679b5ab01f4f322aeb03ab6b54ed6bbc0eab102c9426862e2a",
+          "fileName": "image.png",
+          "fileType": "image/png",
+          "fileSize": 3803733,
+          "localTempSrc": "blob:https://www.yuque.com/4674dce1-de45-4b77-a4c6-62b42f734c20",
+          "state": -2
+        },
+        "firstInsertRatio": 1
+      },
+      "width": 120.92550900179566,
+      "height": 71.22695700673944,
+      "x": 1116.1313298237515,
+      "y": 795.5837254249442,
+      "constraints": {
+        "proportion": true
+      },
+      "id": "e75144ce-946e-40af-99a1-31ecd09ce27f",
+      "rotate": 0,
+      "zIndex": 51
+    },
+    {
+      "type": "image",
+      "image": {
+        "src": "https://cdn.nlark.com/yuque/0/2022/png/519985/1647325872313-6e72eda6-a095-45a1-9a9b-4864bc601186.png",
+        "naturalWidth": 998,
+        "naturalHeight": 652,
+        "uploadInfo": {
+          "hash": "9879fb636f593e4874f682eda038fb8cb886e2f11d6c165b51b96d6ddf864e5f",
+          "fileName": "image.png",
+          "fileType": "image/png",
+          "fileSize": 1737843,
+          "localTempSrc": "blob:https://www.yuque.com/e4b06a67-3f5a-4598-9d1d-1e6cc021c76c",
+          "state": -2
+        },
+        "firstInsertRatio": 1
+      },
+      "width": 94.43390493276297,
+      "height": 61.69429460537222,
+      "x": 1757.5764251296591,
+      "y": 525.9370052830955,
+      "constraints": {
+        "proportion": true
+      },
+      "id": "6f825e7a-919e-41ca-9202-b31972ab1115",
+      "rotate": 0,
+      "zIndex": 52
+    },
+    {
+      "type": "image",
+      "image": {
+        "src": "https://cdn.nlark.com/yuque/0/2022/png/519985/1647325931052-c7c250fa-9526-4369-bd3d-2875b7cb9544.png",
+        "naturalWidth": 736,
+        "naturalHeight": 452,
+        "uploadInfo": {
+          "hash": "b50975f2ecf68526da4440da2a93526cf832526e27dbff526a1d8c2687309b6b",
+          "fileName": "image.png",
+          "fileType": "image/png",
+          "fileSize": 1346871,
+          "localTempSrc": "blob:https://www.yuque.com/ac2b33f9-886d-4a76-9cda-5a856880b240",
+          "state": -2
+        },
+        "firstInsertRatio": 1
+      },
+      "width": 117.1189405790704,
+      "height": 71.92630589910307,
+      "x": 798.0490347892198,
+      "y": 658.6814579351224,
+      "constraints": {
+        "proportion": true
+      },
+      "id": "3243ce1c-b943-4653-97ed-52fb0f2d148d",
+      "rotate": 0,
+      "zIndex": 53
+    }
+  ],
+  "settings": {
+    "viewport": {
+      "zoom": 0.6570006612813141,
+      "tlCanvasPoint": [
+        713.5814362939029,
+        220.13002054653882,
+        1
+      ],
+      "width": 1575,
+      "height": 851
+    },
+    "options": "WYSIWYG"
+  },
+  "meta": {
+    "format": "lakeboard",
+    "type": "Board",
+    "original_version": "1.0"
+  }
+}

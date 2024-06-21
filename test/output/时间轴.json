@@ -1,0 +1,518 @@
+{
+  "version": "2.0.0",
+  "data": [
+    {
+      "id": "edeafe26-bf54-43d7-bd7c-3ed721d05c84",
+      "type": "group",
+      "children": [
+        {
+          "type": "geometry",
+          "html": "<div style=\"text-align:center;\">&nbsp;</div>",
+          "shape": "rounded-rect",
+          "fill": {
+            "color": "rgba(177,199,116,0.2)"
+          },
+          "stroke": {
+            "style": "dash",
+            "color": "#B1C774"
+          },
+          "id": "e3ff2543-4709-4b4d-8de3-a0f6841dae5b",
+          "x": 1346.0640812499998,
+          "y": 242.6680943169622,
+          "width": 438.020459277344,
+          "height": 230.02781005859373,
+          "rotate": 0,
+          "zIndex": 0,
+          "round": 10
+        },
+        {
+          "type": "geometry",
+          "html": "<div style=\"text-align:center;\"><span style=\"color:rgb(255, 255, 255); font-weight:bold;\">标注信息</span></div>",
+          "shape": "rounded-rect",
+          "stroke": {
+            "color": "#8CA357",
+            "width": 1
+          },
+          "id": "4a2c5a43-bbfb-4353-8527-d7ee7529d22b",
+          "x": 1355.5640812499998,
+          "y": 225.47444921198166,
+          "width": 97.30505583496085,
+          "height": 32.38729020996088,
+          "rotate": 0,
+          "fill": {
+            "color": "#B1C774"
+          },
+          "round": 10,
+          "zIndex": 1
+        }
+      ],
+      "zIndex": 2
+    },
+    {
+      "id": "6715330e-4138-4219-aafb-9b0f12234a94",
+      "x": 768,
+      "y": 340.1680943169622,
+      "html": "主时间线",
+      "type": "mindmap",
+      "defaultContentStyle": {
+        "color": "rgb(38, 38, 38)"
+      },
+      "border": {
+        "fill": "#E6F4FC",
+        "stroke": "#69B1E4",
+        "stroke-width": 1
+      },
+      "children": [
+        {
+          "layout": {
+            "quadrant": 1
+          },
+          "treeEdge": {
+            "stroke": "#69B1E4",
+            "stroke-width": 1
+          },
+          "id": "b2511683-8731-4623-9740-39e6acfe8f9f",
+          "children": [
+            {
+              "border": {
+                "shape": "line",
+                "stroke": "#69B1E4",
+                "fill": "#FAFAFA",
+                "stroke-width": 1
+              },
+              "treeEdge": {
+                "stroke-width": 1
+              },
+              "id": "e770629b-1679-4006-9678-f4381519afd2",
+              "children": [],
+              "html": "<span style=\"color:rgb(140, 140, 140);\">事项内容</span>",
+              "zIndex": 24
+            },
+            {
+              "border": {
+                "shape": "line",
+                "stroke": "#69B1E4",
+                "fill": "#FAFAFA",
+                "stroke-width": 1
+              },
+              "id": "4212ff91-fab7-49af-b9d4-ca9594377ef6",
+              "children": [],
+              "html": "<span style=\"color:rgb(140, 140, 140);\">事项内容</span>",
+              "zIndex": 23
+            }
+          ],
+          "html": "10.15",
+          "border": {
+            "shape": "capsule",
+            "stroke-width": 1,
+            "fill": "#FAFAFA",
+            "stroke": "#69B1E4"
+          },
+          "zIndex": 25
+        },
+        {
+          "border": {
+            "shape": "capsule",
+            "stroke": "#69B1E4",
+            "fill": "#FAFAFA",
+            "stroke-width": 1
+          },
+          "treeEdge": {
+            "stroke-width": 1,
+            "stroke": "#69B1E4"
+          },
+          "id": "8a194830-a6b6-4e2f-aa20-4f6c15195ec9",
+          "children": [
+            {
+              "border": {
+                "shape": "line",
+                "stroke": "#69B1E4",
+                "fill": "#FAFAFA",
+                "stroke-width": 1
+              },
+              "treeEdge": {
+                "stroke-width": 1
+              },
+              "id": "a32f1d3e-6f08-4983-8b8e-13c82a45b0f8",
+              "children": [],
+              "html": "<span style=\"color:rgb(140, 140, 140);\">事项内容</span>",
+              "zIndex": 21
+            },
+            {
+              "html": "<span style=\"color:rgb(140, 140, 140);\">事项内容</span>",
+              "id": "2baf67ee-5cee-45f0-af05-d873df93d00e",
+              "children": [],
+              "zIndex": 20
+            },
+            {
+              "html": "<span style=\"color:rgb(140, 140, 140);\">事项内容</span>",
+              "id": "c26607c9-f07b-4064-b67c-87693440fa81",
+              "children": [],
+              "zIndex": 19
+            },
+            {
+              "html": "<span style=\"color:rgb(140, 140, 140);\">事项内容</span>",
+              "id": "5b0dd3d8-1f6b-4113-8677-4ab08de154b5",
+              "children": [],
+              "zIndex": 18
+            }
+          ],
+          "html": "<span style=\"font-weight:bold;\">10.30</span>",
+          "layout": {
+            "quadrant": 1
+          },
+          "zIndex": 22
+        },
+        {
+          "border": {
+            "shape": "capsule",
+            "stroke": "#69B1E4",
+            "fill": "#FAFAFA",
+            "stroke-width": 1
+          },
+          "id": "c11e1bda-caff-498c-8349-1d7ca364b21b",
+          "children": [
+            {
+              "border": {
+                "shape": "line",
+                "stroke": "#69B1E4",
+                "fill": "#FAFAFA",
+                "stroke-width": 1
+              },
+              "treeEdge": {
+                "stroke-width": 1
+              },
+              "id": "b888cd71-0fd4-449f-ba37-c781ce30a72c",
+              "children": [],
+              "html": "<span style=\"color:rgb(140, 140, 140);\">事项内容</span>",
+              "zIndex": 16
+            },
+            {
+              "border": {
+                "shape": "line",
+                "stroke": "#69B1E4",
+                "fill": "#FAFAFA",
+                "stroke-width": 1
+              },
+              "id": "8d48f3cf-f799-4460-8535-f1e25383765a",
+              "children": [],
+              "html": "<span style=\"color:rgb(140, 140, 140);\">事项内容</span>",
+              "zIndex": 15
+            }
+          ],
+          "html": "<span style=\"font-weight:bold;\">11.15</span>",
+          "layout": {
+            "quadrant": 1
+          },
+          "treeEdge": {
+            "stroke": "#69B1E4",
+            "stroke-width": 1
+          },
+          "zIndex": 17
+        },
+        {
+          "border": {
+            "shape": "capsule",
+            "stroke": "#E48484",
+            "fill": "#FCEFED",
+            "stroke-width": 1
+          },
+          "id": "717a4f5d-cd5c-4586-a21c-2abd976a6a9b",
+          "children": [
+            {
+              "border": {
+                "shape": "line",
+                "stroke": "#69B1E4",
+                "fill": "#FAFAFA",
+                "stroke-width": 1
+              },
+              "treeEdge": {
+                "stroke-width": 1
+              },
+              "id": "195742f3-6048-4687-a311-4dfbef8955a9",
+              "children": [],
+              "html": "<span style=\"color:rgb(140, 140, 140);\">事项内容</span>",
+              "zIndex": 13
+            },
+            {
+              "border": {
+                "shape": "line",
+                "stroke": "#69B1E4",
+                "fill": "#FAFAFA",
+                "stroke-width": 1
+              },
+              "id": "994b3ec9-eb4a-44fe-998f-5cb7990a1100",
+              "children": [],
+              "html": "<span style=\"color:rgb(140, 140, 140);\">事项内容</span>",
+              "zIndex": 12
+            }
+          ],
+          "html": "<span style=\"font-weight:bold;\">11.30</span>",
+          "layout": {
+            "quadrant": 1
+          },
+          "treeEdge": {
+            "stroke": "#69B1E4",
+            "stroke-width": 1
+          },
+          "zIndex": 14
+        },
+        {
+          "border": {
+            "shape": "capsule",
+            "stroke": "#E48484",
+            "fill": "#FCEFED",
+            "stroke-width": 1
+          },
+          "id": "ad8e4006-3bfe-4d9c-8eb6-f23dd43f1eef",
+          "children": [
+            {
+              "border": {
+                "shape": "line",
+                "stroke": "#69B1E4",
+                "fill": "#FAFAFA",
+                "stroke-width": 1
+              },
+              "treeEdge": {
+                "stroke-width": 1
+              },
+              "id": "801c51e0-250d-4e90-b1a0-a765a8f8f20c",
+              "children": [],
+              "html": "<span style=\"color:rgb(140, 140, 140);\">事项内容</span>",
+              "zIndex": 10
+            },
+            {
+              "border": {
+                "shape": "line",
+                "stroke": "#69B1E4",
+                "fill": "#FAFAFA",
+                "stroke-width": 1
+              },
+              "id": "93a1c600-fe3b-41b1-beb6-88ba7153b002",
+              "children": [],
+              "html": "<span style=\"color:rgb(140, 140, 140);\">事项内容</span>",
+              "zIndex": 9
+            }
+          ],
+          "html": "<span style=\"font-weight:bold;\">12.10</span>",
+          "layout": {
+            "quadrant": 1
+          },
+          "treeEdge": {
+            "stroke": "#69B1E4",
+            "stroke-width": 1
+          },
+          "zIndex": 11
+        },
+        {
+          "border": {
+            "shape": "capsule",
+            "stroke": "#69B1E4",
+            "fill": "#C4E4F5",
+            "stroke-width": 1
+          },
+          "id": "6aa11617-2de8-4529-b13d-402f0b049924",
+          "children": [
+            {
+              "border": {
+                "shape": "line",
+                "stroke": "#69B1E4",
+                "fill": "#FAFAFA",
+                "stroke-width": 1
+              },
+              "treeEdge": {
+                "stroke-width": 1
+              },
+              "id": "e1ff2a79-8c95-4c18-8af0-5c5c4e226d2b",
+              "children": [],
+              "html": "<span style=\"color:rgb(140, 140, 140);\">事项内容</span>",
+              "zIndex": 7
+            },
+            {
+              "border": {
+                "shape": "line",
+                "stroke": "#69B1E4",
+                "fill": "#FAFAFA",
+                "stroke-width": 1
+              },
+              "id": "e95b3e6b-5f37-48ca-9ef8-cbff22123ef7",
+              "children": [],
+              "html": "<span style=\"color:rgb(140, 140, 140);\">事项内容</span>",
+              "zIndex": 6
+            }
+          ],
+          "html": "<span style=\"font-weight:bold;\">12.15</span>",
+          "layout": {
+            "quadrant": 1
+          },
+          "treeEdge": {
+            "stroke": "#69B1E4",
+            "stroke-width": 1
+          },
+          "zIndex": 8
+        },
+        {
+          "border": {
+            "shape": "capsule",
+            "stroke": "#69B1E4",
+            "fill": "#C4E4F5",
+            "stroke-width": 1
+          },
+          "id": "9531b7ec-01a6-435c-a7d6-12e99430da8a",
+          "children": [
+            {
+              "border": {
+                "shape": "line",
+                "stroke": "#69B1E4",
+                "fill": "#FAFAFA",
+                "stroke-width": 1
+              },
+              "treeEdge": {
+                "stroke-width": 1
+              },
+              "id": "8353f868-51cd-45ff-b6e2-46fd5864b6c8",
+              "children": [],
+              "html": "<span style=\"color:rgb(140, 140, 140);\">事项内容</span>",
+              "zIndex": 4
+            },
+            {
+              "border": {
+                "shape": "line",
+                "stroke": "#69B1E4",
+                "fill": "#FAFAFA",
+                "stroke-width": 1
+              },
+              "id": "77f58b0d-eafb-4741-88d4-fb86bb7353de",
+              "children": [],
+              "html": "<span style=\"color:rgb(140, 140, 140);\">事项内容</span>",
+              "zIndex": 3
+            }
+          ],
+          "html": "<span style=\"font-weight:bold;\">12.30</span>",
+          "layout": {
+            "quadrant": 1
+          },
+          "treeEdge": {
+            "stroke": "#69B1E4",
+            "stroke-width": 1
+          },
+          "zIndex": 5
+        }
+      ],
+      "layout": {
+        "type": "timeline",
+        "direction": [
+          1,
+          0
+        ],
+        "quadrantConstraint": [
+          1
+        ]
+      },
+      "zIndex": 26
+    },
+    {
+      "type": "geometry",
+      "html": "<div style=\"text-align:center;\"><span style=\"color:rgb(255, 255, 255); font-weight:bold;\">特殊的标注信息文字</span></div>",
+      "shape": "rounded-rect",
+      "fill": {
+        "color": "#BD6468"
+      },
+      "stroke": {
+        "color": "transparent",
+        "width": 1
+      },
+      "id": "5ce7e69e-278d-498a-a949-0a6018358cba",
+      "x": 1068.3443367835318,
+      "y": 144,
+      "width": 181.79523385094353,
+      "height": 33.92832668191133,
+      "rotate": 0,
+      "round": 10,
+      "zIndex": 27
+    },
+    {
+      "type": "line",
+      "shape": "curve",
+      "source": {
+        "id": "c11e1bda-caff-498c-8349-1d7ca364b21b"
+      },
+      "target": {
+        "id": "5ce7e69e-278d-498a-a949-0a6018358cba",
+        "marker": "arrow"
+      },
+      "id": "bb3aa885-ee0e-4270-92d6-a6c77f0cb712",
+      "controlPoints": [
+        [
+          1168.8043462184792,
+          257.8286223458771,
+          null
+        ]
+      ],
+      "stroke": {
+        "style": "dash",
+        "color": "#BD6468"
+      },
+      "zIndex": 28
+    },
+    {
+      "type": "geometry",
+      "html": "<div style=\"text-align:center;\">另一种标注信息</div>",
+      "shape": "rounded-rect",
+      "fill": {
+        "color": "#FCF6E1"
+      },
+      "stroke": {
+        "color": "#B88F44",
+        "width": 1
+      },
+      "id": "21e94729-07bf-4335-a4ef-abe7ab262e92",
+      "x": 1186.5,
+      "y": 427.48317588047735,
+      "width": 134.89761692547177,
+      "height": 33.92832668191133,
+      "rotate": 0,
+      "round": 10,
+      "zIndex": 29
+    },
+    {
+      "type": "line",
+      "shape": "straight",
+      "source": {
+        "id": "21e94729-07bf-4335-a4ef-abe7ab262e92",
+        "connection": [
+          0.01482605879616806,
+          0.9359004334246538
+        ]
+      },
+      "target": {
+        "connection": "E",
+        "id": "c26607c9-f07b-4064-b67c-87693440fa81"
+      },
+      "id": "b2e79998-c4f3-4c5a-ba81-bd2f5373916e",
+      "stroke": {
+        "color": "#B88F44",
+        "width": 1
+      },
+      "zIndex": 30
+    }
+  ],
+  "settings": {
+    "viewport": {
+      "zoom": 1,
+      "tlCanvasPoint": [
+        715.75,
+        32.33404541015625,
+        1
+      ],
+      "width": 1575,
+      "height": 851
+    },
+    "options": "adapt"
+  },
+  "meta": {
+    "format": "lakeboard",
+    "type": "Board",
+    "original_version": "1.0"
+  }
+}
