@@ -7,4 +7,5 @@ dist-ssr
 *-lock.*
 target
 result
+/test/input*
 pnpm-debug
