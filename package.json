@@ -1,7 +1,7 @@
 {
   "name": "yuque2xmind",
   "version": "1.0.0",
-  "author": "Your Name",
+  "author": "zzy",
   "description": "This is a tool to convert yuque mind to xmind",
   "main": "convert_lakemind_to_xmind.js",
   "type": "module",
