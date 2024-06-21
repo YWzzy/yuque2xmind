@@ -5,3 +5,6 @@
 {"level":"error","message":"处理文件 E:\\python_tool\\lakemind_to_xmind\\target\\时间轴.lakeboard 时发生错误: Cannot read properties of undefined (reading 'map')","service":"lake-to-json-service","timestamp":"2024-06-21 13:16:29"}
 {"level":"error","message":"异常日志: 处理文件 E:\\python_tool\\lakemind_to_xmind\\target\\时间轴.lakeboard 时发生错误: Cannot read properties of undefined (reading 'map')","service":"lake-to-json-service","timestamp":"2024-06-21 13:22:09"}
 {"level":"error","message":"异常日志: 处理文件 E:\\python_tool\\lakemind_to_xmind\\target\\旅游.lakeboard 时发生错误: Cannot read properties of undefined (reading 'map')","service":"lake-to-json-service","timestamp":"2024-06-21 13:22:09"}
+{"level":"error","message":"异常日志: 处理文件 E:\\python_tool\\lakemind_to_xmind\\target\\旅游.lakeboard 时发生错误: Cannot read properties of undefined (reading 'map')","service":"lake-to-json-service","timestamp":"2024-06-21 14:05:48"}
+{"level":"error","message":"异常日志: 处理文件 E:\\python_tool\\lakemind_to_xmind\\target\\时间轴.lakeboard 时发生错误: Cannot read properties of undefined (reading 'map')","service":"lake-to-json-service","timestamp":"2024-06-21 14:05:48"}
+{"level":"error","message":"异常日志: 处理文件 E:\\python_tool\\lakemind_to_xmind\\target\\流程图.lakeboard 时发生错误: Cannot read properties of undefined (reading 'map')","service":"lake-to-json-service","timestamp":"2024-06-21 14:05:48"}

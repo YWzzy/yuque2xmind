@@ -9,3 +9,5 @@ target
 result
 /test/input*
 pnpm-debug
+combined.log
+error.log
