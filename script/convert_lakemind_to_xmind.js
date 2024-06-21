@@ -171,7 +171,7 @@ prompt([
               "..",
               "result",
               "output",
-              fileName
+              `${fileName}.xmind`
             );
             const rowData = [fileName, "-", "-", saveDir, "处理中"];
             const startTime = Date.now();
@@ -214,7 +214,7 @@ prompt([
           // 如果存在错误信息，输出错误信息
           if (errorMsgList.length > 0) {
             errorMsgList.forEach((msg) => {
-              logger.error(msg);
+              logger.error("异常日志: %s", msg);
             });
           }
 
