@@ -145,7 +145,14 @@ prompt([
               "cache",
               fileName
             );
-            const rowData = [fileName, "-", "-", savePath, "处理中"];
+            const saveDir = path.join(
+              __dirname,
+              "..",
+              "result",
+              "output",
+              fileName
+            );
+            const rowData = [fileName, "-", "-", saveDir, "处理中"];
             const startTime = Date.now();
 
             try {
