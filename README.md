@@ -67,7 +67,7 @@ npm run start
 - 设置镜像源
 
 ```bash
-pnpm config set registry https://registry.npm.taobao.org/
+npm config set registry https://registry.npm.taobao.org/
 ```
 
 - 其他命令请看 package.json scripts
