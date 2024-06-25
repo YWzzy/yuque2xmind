@@ -34,7 +34,7 @@ export const generateManifest = async (downloadedFiles, savePath) => {
       JSON.stringify(manifest, null, 4),
       "utf8"
     );
-    console.log(`manifest.json 文件已成功生成并保存为 ${manifestFilePath}`);
+    // console.log(`manifest.json 文件已成功生成并保存为 ${manifestFilePath}`);
   } catch (err) {
     console.error("生成 manifest.json 文件时出错:", err);
   }
