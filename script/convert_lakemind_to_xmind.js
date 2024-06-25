@@ -5,10 +5,31 @@ import inquirer from "inquirer";
 import { SingleBar } from "cli-progress";
 import Table from "cli-table3";
 import pLimit from "p-limit";
+import { createLogger, format, transports } from "winston";
+
 import { convertLakeboardToJson } from "./convertLakeboardToJson.js";
 import { convertLakeMindToContent } from "./convertLakeJsonToContentJson.js";
 import { generateManifest } from "./generateManifest.js";
 import { generateXMindFile } from "./generateXMindFile.js";
+
+// 设置日志记录器
+const logger = createLogger({
+  level: "info",
+  format: format.combine(
+    format.timestamp({ format: "YYYY-MM-DD HH:mm:ss" }),
+    format.errors({ stack: true }),
+    format.splat(),
+    format.json()
+  ),
+  defaultMeta: { service: "lake-to-json-service" },
+  transports: [
+    new transports.File({ filename: "error.log", level: "error" }),
+    new transports.File({ filename: "combined.log" }),
+    new transports.Console({
+      format: format.combine(format.colorize(), format.simple()),
+    }),
+  ],
+});
 
 // 获取当前文件的文件名和目录名
 const __filename = fileURLToPath(import.meta.url);
@@ -16,6 +37,7 @@ const __dirname = path.dirname(__filename);
 
 // 提示用户输入要处理的目录路径
 const prompt = inquirer.createPromptModule();
+const errorMsgList = [];
 prompt([
   {
     type: "input",
@@ -37,7 +59,7 @@ prompt([
     // 读取目录中的所有文件
     fs.readdir(rootDir, async (err, files) => {
       if (err) {
-        console.error("无法读取目录内容:", err);
+        logger.error("无法读取目录内容: %s", err);
         return;
       }
 
@@ -47,7 +69,7 @@ prompt([
       );
 
       if (lakeboardFiles.length === 0) {
-        console.log("目录中不存在 .lakeboard 文件。");
+        logger.info("目录中不存在 .lakeboard 文件。");
         return;
       }
 
@@ -150,7 +172,7 @@ prompt([
               "..",
               "result",
               "output",
-              fileName
+              `${fileName}.xmind`
             );
             const rowData = [fileName, "-", "-", saveDir, "处理中"];
             const startTime = Date.now();
@@ -174,7 +196,8 @@ prompt([
               rowData[2] = elapsedTime.toString();
               rowData[1] = fileSize.toString();
             } catch (error) {
-              console.error(`处理文件 ${file} 时发生错误:`, error);
+              const msg = `处理文件 ${file} 时发生错误: ${error.message}`;
+              errorMsgList.push(msg);
               rowData[4] = "失败";
             }
 
@@ -194,14 +217,21 @@ prompt([
           // 结束总进度条
           totalProgressBar.stop();
 
+          // 如果存在错误信息，输出错误信息
+          if (errorMsgList.length > 0) {
+            errorMsgList.forEach((msg) => {
+              logger.error("异常日志: %s", msg);
+            });
+          }
+
           // 输出表格
           console.log(table.toString());
         })
         .catch((err) => {
-          console.error("选择文件时发生错误:", err);
+          logger.error("选择文件时发生错误: %s", err);
         });
     });
   })
   .catch((err) => {
-    console.error("输入目录路径时发生错误:", err);
+    logger.error("输入目录路径时发生错误: %s", err);
   });

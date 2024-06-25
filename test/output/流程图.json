@@ -1,0 +1,680 @@
+{
+  "version": "2.0.0",
+  "data": [
+    {
+      "type": "geometry",
+      "html": "<div style=\"text-align:center;\"><span style=\"font-weight:bold;\">开始</span></div>",
+      "shape": "start-end",
+      "stroke": {
+        "color": "rgba(0,121,242,1)"
+      },
+      "id": "d77c3c0a-5f56-467e-87c2-13c326d1437e",
+      "x": 1231.7469236159975,
+      "y": 217.79367800092942,
+      "width": 100,
+      "height": 40,
+      "zIndex": 0
+    },
+    {
+      "type": "geometry",
+      "html": "<div style=\"text-align:center;\"><span style=\"font-weight:bold;\">结束</span></div>",
+      "shape": "start-end",
+      "stroke": {
+        "color": "rgba(0,121,242,1)"
+      },
+      "id": "0cd21805-0c46-4a09-ae34-b9febe1901e4",
+      "x": 1351.4645164619487,
+      "y": 217.79367800092942,
+      "width": 100,
+      "height": 40,
+      "zIndex": 1
+    },
+    {
+      "type": "text",
+      "html": "<span style=\"font-weight:bold; font-size:18px; color:rgb(140, 140, 140);\">常用图例</span>",
+      "id": "4ab3d958-9c7e-4db0-857b-a5b55c40a379",
+      "x": 1232.2469236159975,
+      "y": 158.578895672147,
+      "zIndex": 2
+    },
+    {
+      "type": "geometry",
+      "html": "<div style=\"text-align:center;\">有下级流程</div>",
+      "shape": "subroutine",
+      "fill": {
+        "color": "#E6F4FC"
+      },
+      "id": "3665d196-9e63-4291-918a-6678f563b53a",
+      "x": 1232.7469236159975,
+      "y": 297.5878918759557,
+      "width": 120,
+      "height": 60,
+      "rotate": 0,
+      "zIndex": 3
+    },
+    {
+      "id": "853cfdf0-e131-45f3-a18d-25bd5c52429f",
+      "type": "group",
+      "children": [
+        {
+          "type": "geometry",
+          "html": "<div style=\"text-align:center;\"><div>线上流程</div></div>",
+          "shape": "rect",
+          "id": "e65c5a0e-2353-46eb-9de0-679f9dd6dced",
+          "x": 1232.7469236159975,
+          "y": 487.5896421179138,
+          "width": 120,
+          "height": 59.55902099609375,
+          "rotate": 0,
+          "zIndex": 4
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "https://cdn.nlark.com/yuque/0/2021/png/956523/1636343233420-2f8f6dfc-ed48-47b7-96d5-579aa86d7ba7.png",
+            "naturalWidth": 48,
+            "naturalHeight": 48,
+            "uploadInfo": {
+              "hash": "4b005ea1317206bbf60dec46a48aaf91aea9b6708f31da6160d919c53698ccda",
+              "fileName": "image.png",
+              "fileType": "image/png",
+              "fileSize": 868,
+              "localTempSrc": "blob:https://www.yuque.com/bb91d914-3890-4ed2-a6b6-724d146cc40b",
+              "state": -2
+            },
+            "firstInsertRatio": 0.5
+          },
+          "width": 20.36769761396181,
+          "height": 20.36769761396181,
+          "x": 1221.5630748090166,
+          "y": 475.4057933109329,
+          "constraints": {
+            "proportion": true
+          },
+          "id": "eb56704d-9a94-4726-925a-ac3b7938b94b",  
+          "rotate": 0,
+          "zIndex": 5
+        }
+      ],
+      "zIndex": 6
+    },
+    {
+      "id": "5e474600-1bb5-4b6a-b551-8f945e1fd416",
+      "type": "group",
+      "children": [
+        {
+          "type": "geometry",
+          "html": "<div style=\"text-align:center;\"><div>重点流程</div></div>",
+          "shape": "rect",
+          "id": "ff54d206-c394-441c-9140-db5d7972caa1",
+          "x": 1232.7469236159975,
+          "y": 397.78233073036057,
+          "width": 120,
+          "height": 59.55902099609375,
+          "rotate": 0,
+          "zIndex": 7
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "https://cdn.nlark.com/yuque/0/2021/png/956523/1636343251316-136a467f-c37c-47ac-bb36-401870da6525.png",
+            "naturalWidth": 40,
+            "naturalHeight": 40,
+            "uploadInfo": {
+              "hash": "392f08f262c7ad00893020ec8cf6f28f7c9f343d5cc0fcfa66a1622aa34e2d03",
+              "fileName": "image.png",
+              "fileType": "image/png",
+              "fileSize": 643,
+              "localTempSrc": "blob:https://www.yuque.com/013b7caf-dc0b-4bb7-8075-6e1c27328b82",
+              "state": -2
+            },
+            "firstInsertRatio": 0.5
+          },
+          "width": 16.76159571946846,
+          "height": 16.76159571946846,
+          "x": 1222.533000718801,
+          "y": 391.56840783316403,
+          "constraints": {
+            "proportion": true
+          },
+          "id": "301926bc-ae1c-46c5-a1b8-aa0ca633d441",
+          "rotate": 0,
+          "zIndex": 8
+        }
+      ],
+      "zIndex": 9
+    },
+    {
+      "type": "geometry",
+      "html": "<div style=\"text-align:center;\">判断</div>",
+      "shape": "decision",
+      "id": "60cb4b7b-5a16-48eb-84d7-c2ecc6ec9df9",
+      "x": 1232.7469236159975,
+      "y": 749.3795685699731,
+      "width": 140,
+      "height": 70,
+      "constraints": {
+        "proportion": false
+      },
+      "zIndex": 10
+    },
+    {
+      "type": "geometry",
+      "html": "<div style=\"text-align:center;\">通知</div>",
+      "shape": "manual-input",
+      "id": "c3e22313-c781-43ad-b952-e25980431e37",
+      "x": 1232.7469236159975,
+      "y": 841.8689119826031,
+      "width": 120,
+      "height": 60,
+      "zIndex": 11
+    },
+    {
+      "type": "geometry",
+      "html": "<div style=\"text-align:center;\">文档</div>",
+      "shape": "document",
+      "id": "df18e219-c43f-479d-93c5-ed264a1fcb71",
+      "x": 1232.7469236159975,
+      "y": 668.6005645154596,
+      "width": 120,
+      "height": 60,
+      "zIndex": 12
+    },
+    {
+      "type": "line",
+      "shape": "elbow",
+      "source": {
+        "connection": [1231.7469176894365, 1000.0922964973895]
+      },
+      "html": "<div style=\"text-align:center;\"><span style=\"font-size:12px; color:rgb(140, 140, 140);\">Y/N</span></div>",
+      "target": {
+        "connection": [1484.7469176894365, 1000.0922964973895],
+        "marker": "arrow"
+      },
+      "id": "91d351cd-2e90-4aab-b260-8253d0b50846",
+      "controlPoints": [],
+      "opacity": 1,
+      "stroke": {
+        "color": "#8C8C8C"
+      },
+      "zIndex": 13
+    },
+    {
+      "type": "line",
+      "shape": "elbow",
+      "source": {
+        "connection": [1231.7469176894365, 962.0441519025983]
+      },
+      "html": "<div style=\"text-align:center;\"><span style=\"font-size:12px; color:rgb(140, 140, 140);\">AND/OR</span></div>",
+      "target": {
+        "connection": [1484.7469176894365, 962.0441519025983]
+      },
+      "id": "9adcb896-6835-4564-b4e5-f1066da03077",
+      "controlPoints": [],
+      "stroke": {
+        "style": "dash",
+        "color": "#8C8C8C"
+      },
+      "opacity": 1,
+      "zIndex": 14
+    },
+    {
+      "id": "4401993f-fe8a-4838-b579-e9c357c0200e",
+      "type": "group",
+      "children": [
+        {
+          "type": "geometry",
+          "html": "<div style=\"text-align:center;\">自动化流程</div>",
+          "shape": "rect",
+          "id": "46bb4b1d-1b62-4d07-bc22-12530a034cb5",
+          "x": 1232.7469236159975,
+          "y": 576.57172251218,
+          "width": 120,
+          "height": 59.55902099609375,
+          "rotate": 0,
+          "zIndex": 15
+        },
+        {
+          "type": "geometry",
+          "html": "<div style=\"text-align:center;\"><span style=\"font-weight:bold; color:rgb(0, 121, 242); font-size:15px;\">Auto</span></div>",
+          "shape": "start-end",
+          "stroke": {
+            "color": "transparent"
+          },
+          "id": "c7fce534-0e13-4e52-b12e-a50e2f72daa4",
+          "x": 1219.07526047963,
+          "y": 567.1307435082738,
+          "width": 44,
+          "height": 16,
+          "rotate": 0,
+          "zIndex": 16
+        }
+      ],
+      "zIndex": 17
+    },
+    {
+      "type": "geometry",
+      "html": "<div style=\"text-align:center;\"><span style=\"font-weight:bold;\">开始</span></div>",
+      "shape": "start-end",
+      "stroke": {
+        "color": "rgba(0,121,242,1)"
+      },
+      "id": "0a122ee2-59b8-45af-a3f6-883eaf8c781f",
+      "x": 1663.2302174020865,
+      "y": 244.0730983108655,
+      "width": 100,
+      "height": 40,
+      "zIndex": 18
+    },
+    {
+      "type": "geometry",
+      "html": "<div style=\"text-align:center;\"><span style=\"font-weight:bold;\">结束</span></div>",
+      "shape": "start-end",
+      "stroke": {
+        "color": "rgba(0,121,242,1)"
+      },
+      "id": "2e2c9455-a1e6-41ab-8680-0ef8ddd44fd4",
+      "x": 2413.5606736531645,
+      "y": 884.0730983108654,
+      "width": 100,
+      "height": 40,
+      "zIndex": 19
+    },
+    {
+      "type": "geometry",
+      "html": "<div style=\"text-align:center;\">有下级流程</div>",
+      "shape": "subroutine",
+      "fill": {
+        "color": "#E6F4FC"
+      },
+      "id": "5cd322a5-96ad-4c8b-9200-5f885430618a",
+      "x": 1653.2302174020865,
+      "y": 393.8904677884869,
+      "width": 120,
+      "height": 60,
+      "rotate": 0,
+      "zIndex": 20
+    },
+    {
+      "type": "line",
+      "shape": "elbow",
+      "source": {
+        "id": "0a122ee2-59b8-45af-a3f6-883eaf8c781f",
+        "connection": "S"
+      },
+      "target": {
+        "marker": "arrow",
+        "id": "5cd322a5-96ad-4c8b-9200-5f885430618a"
+      },
+      "id": "0890985b-dc9b-4d99-b106-cc630b8119f0",
+      "zIndex": 21
+    },
+    {
+      "id": "7e22242c-6263-4075-91fe-aa3bbfe4eb41",
+      "type": "group",
+      "children": [
+        {
+          "type": "geometry",
+          "html": "<div style=\"text-align:center;\"><div>线上流程</div></div>",
+          "shape": "rect",
+          "id": "070ec6d3-3bc0-47d7-8a27-cc4e221ab0f6",
+          "x": 1858.24011488575,
+          "y": 394.07309831086553,
+          "width": 120,
+          "height": 59.55902099609375,
+          "rotate": 0,
+          "zIndex": 22
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "https://cdn.nlark.com/yuque/0/2021/png/956523/1636343233420-2f8f6dfc-ed48-47b7-96d5-579aa86d7ba7.png",
+            "naturalWidth": 48,
+            "naturalHeight": 48,
+            "uploadInfo": {
+              "hash": "4b005ea1317206bbf60dec46a48aaf91aea9b6708f31da6160d919c53698ccda",
+              "fileName": "image.png",
+              "fileType": "image/png",
+              "fileSize": 868,
+              "localTempSrc": "blob:https://www.yuque.com/bb91d914-3890-4ed2-a6b6-724d146cc40b",
+              "state": -2
+            },
+            "firstInsertRatio": 0.5
+          },
+          "width": 20.36769761396181,
+          "height": 20.36769761396181,
+          "x": 1847.056266078769,
+          "y": 382.14759798541223,
+          "constraints": {
+            "proportion": true
+          },
+          "id": "c1ecf390-90a3-4622-ab72-cc3d07280c29",
+          "rotate": 0,
+          "zIndex": 23
+        }
+      ],
+      "zIndex": 24
+    },
+    {
+      "type": "line",
+      "shape": "elbow",
+      "source": {
+        "id": "5cd322a5-96ad-4c8b-9200-5f885430618a",
+        "connection": "E"
+      },
+      "target": {
+        "connection": "W",
+        "marker": "arrow",
+        "id": "070ec6d3-3bc0-47d7-8a27-cc4e221ab0f6"
+      },
+      "id": "1d0b9e4a-f1b5-4223-b3fc-9d6bd606de5c",
+      "controlPoints": [],
+      "zIndex": 25
+    },
+    {
+      "type": "geometry",
+      "html": "<div style=\"text-align:center;\">判断</div>",
+      "shape": "decision",
+      "id": "420a6c36-8870-4fce-be4b-7a5a3261b31d",
+      "x": 1848.1100945703192,
+      "y": 544.0730983108654,
+      "width": 140,
+      "height": 70,
+      "constraints": {
+        "proportion": false
+      },
+      "zIndex": 26
+    },
+    {
+      "type": "line",
+      "shape": "elbow",
+      "source": {
+        "id": "070ec6d3-3bc0-47d7-8a27-cc4e221ab0f6",
+        "connection": "S"
+      },
+      "target": {
+        "marker": "arrow",
+        "id": "420a6c36-8870-4fce-be4b-7a5a3261b31d"
+      },
+      "id": "33555318-ad5f-436b-ab28-16d7d0bc9bec",
+      "zIndex": 27
+    },
+    {
+      "id": "171f765f-8aa9-40c0-a9a2-e11c25bbefeb",
+      "type": "group",
+      "children": [
+        {
+          "type": "geometry",
+          "html": "<div style=\"text-align:center;\"><div>重点流程</div></div>",
+          "shape": "rect",
+          "id": "84d10a73-c76a-402f-a48b-2c1225e687c3",
+          "x": 2123.1100945703192,
+          "y": 394.07309831086553,
+          "width": 120,
+          "height": 59.55902099609375,
+          "rotate": 0,
+          "zIndex": 28
+        },
+        {
+          "type": "image",
+          "image": {
+            "src": "https://cdn.nlark.com/yuque/0/2021/png/956523/1636343251316-136a467f-c37c-47ac-bb36-401870da6525.png",
+            "naturalWidth": 40,
+            "naturalHeight": 40,
+            "uploadInfo": {
+              "hash": "392f08f262c7ad00893020ec8cf6f28f7c9f343d5cc0fcfa66a1622aa34e2d03",
+              "fileName": "image.png",
+              "fileType": "image/png",
+              "fileSize": 643,
+              "localTempSrc": "blob:https://www.yuque.com/013b7caf-dc0b-4bb7-8075-6e1c27328b82",
+              "state": -2
+            },
+            "firstInsertRatio": 0.5
+          },
+          "width": 16.76159571946846,
+          "height": 16.76159571946846,
+          "x": 2113.83486915901,
+          "y": 387.61541798582783,
+          "constraints": {
+            "proportion": true
+          },
+          "id": "bafde002-6602-4816-98ba-efb5692c393c",
+          "rotate": 0,
+          "zIndex": 29
+        }
+      ],
+      "zIndex": 30
+    },
+    {
+      "type": "line",
+      "shape": "elbow",
+      "source": {
+        "id": "420a6c36-8870-4fce-be4b-7a5a3261b31d",
+        "connection": "E"
+      },
+      "target": {
+        "marker": "arrow",
+        "id": "84d10a73-c76a-402f-a48b-2c1225e687c3"
+      },
+      "id": "17acf64f-1bf8-412d-8820-4c93ede85c5c",
+      "html": "<div style=\"text-align:center;\"><span style=\"color:rgb(140, 140, 140);\">Y</span></div>",
+      "zIndex": 31
+    },
+    {
+      "id": "fc0781d8-db39-47e5-bce1-84014ee2523f",
+      "type": "group",
+      "children": [
+        {
+          "type": "geometry",
+          "html": "<div style=\"text-align:center;\">自动化流程</div>",
+          "shape": "rect",
+          "id": "226f44bb-96fd-455d-981b-ff963e890371",
+          "x": 1858.24011488575,
+          "y": 714.0730983108654,
+          "width": 120,
+          "height": 59.55902099609375,
+          "rotate": 0,
+          "zIndex": 32
+        },
+        {
+          "type": "geometry",
+          "html": "<div style=\"text-align:center;\"><span style=\"font-weight:bold; color:rgb(0, 121, 242); font-size:15px;\">Auto</span></div>",
+          "shape": "start-end",
+          "stroke": {
+            "color": "transparent"
+          },
+          "id": "020c21c7-4616-46ee-a8ef-443768f347e5",
+          "x": 1844.5684517493828,
+          "y": 704.5852389930135,
+          "width": 44,
+          "height": 16,
+          "rotate": 0,
+          "zIndex": 33
+        }
+      ],
+      "zIndex": 34
+    },
+    {
+      "type": "line",
+      "shape": "elbow",
+      "source": {
+        "id": "420a6c36-8870-4fce-be4b-7a5a3261b31d",
+        "connection": "S"
+      },
+      "target": {
+        "marker": "arrow",
+        "id": "226f44bb-96fd-455d-981b-ff963e890371"
+      },
+      "id": "962d0c25-8205-4b74-9e34-e42d395626de",
+      "html": "<div style=\"text-align:center;\"><span style=\"color:rgb(140, 140, 140);\">N</span></div>",
+      "opacity": 1,
+      "zIndex": 35
+    },
+    {
+      "type": "geometry",
+      "html": "<div style=\"text-align:center;\">文档</div>",
+      "shape": "document",
+      "id": "e389946e-889c-496b-bfa2-ab788918a03f",
+      "x": 2074.33486915901,
+      "y": 874.0730983108654,
+      "width": 120,
+      "height": 60,
+      "zIndex": 36
+    },
+    {
+      "type": "line",
+      "shape": "elbow",
+      "source": {
+        "id": "226f44bb-96fd-455d-981b-ff963e890371",
+        "connection": "S"
+      },
+      "target": {
+        "marker": "arrow",
+        "id": "e389946e-889c-496b-bfa2-ab788918a03f"
+      },
+      "id": "964ebb35-c439-43ba-b03d-e1abcf5b4f84",
+      "controlPoints": [],
+      "zIndex": 37
+    },
+    {
+      "type": "geometry",
+      "html": "<div style=\"text-align:center;\">通知</div>",
+      "shape": "manual-input",
+      "id": "2a25f041-69c4-4fdf-992b-b0e3c668dde7",
+      "x": 2074.33486915901,
+      "y": 714.0730983108654,
+      "width": 120,
+      "height": 60,
+      "zIndex": 38
+    },
+    {
+      "type": "line",
+      "shape": "elbow",
+      "source": {
+        "id": "226f44bb-96fd-455d-981b-ff963e890371",
+        "connection": "E"
+      },
+      "target": {
+        "marker": "arrow",
+        "id": "2a25f041-69c4-4fdf-992b-b0e3c668dde7"
+      },
+      "id": "832991cd-a38f-48e7-aad6-3a062b9f1027",
+      "zIndex": 39
+    },
+    {
+      "type": "line",
+      "shape": "elbow",
+      "source": {
+        "id": "2a25f041-69c4-4fdf-992b-b0e3c668dde7",
+        "connection": "E"
+      },
+      "target": {
+        "marker": "arrow",
+        "id": "2e2c9455-a1e6-41ab-8680-0ef8ddd44fd4"
+      },
+      "id": "1485b151-ed4b-4b63-a75c-98740bf6a1ee",
+      "zIndex": 40
+    },
+    {
+      "type": "swimlane",
+      "shape": "swimlane-horizontal",
+      "category": "swimlane",
+      "id": "03cc4cc4-2baa-4926-96c7-5f69f99e6427",
+      "x": 1570.3878110053943,
+      "y": 202.46884092218951,
+      "widths": [0.05081259453175127],
+      "heights": [
+        0.18604651162790695, 0.3720930232558139, 0.5813953488372092,
+        0.7995444000519429
+      ],
+      "children": [
+        {
+          "html": "<div style=\"text-align:center;\"><div><span style=\"font-weight:bold;\">环</span></div><div><span style=\"font-weight:bold;\">节</span></div><div><span style=\"font-weight:bold;\">1</span></div></div>",
+          "id": "b08939db-4da9-42a7-8ba0-864e4d949507",
+          "nth": 0,
+          "fill": {
+            "color": "#F5F5F5"
+          },
+          "zIndex": 41
+        },
+        {
+          "html": "<div style=\"text-align:center;\"><div><span style=\"font-weight:bold;\">环</span></div><div><span style=\"font-weight:bold;\">节</span></div><div><span style=\"font-weight:700;\">2</span></div></div>",
+          "id": "6156f081-9543-4bfb-abf9-0dabfae4058d",
+          "nth": 1,
+          "fill": {
+            "color": "#F5F5F5"
+          },
+          "zIndex": 42
+        },
+        {
+          "html": "<div style=\"text-align:center;\"><div><span style=\"font-weight:bold;\">环</span></div><div><span style=\"font-weight:bold;\">节</span></div><div><span style=\"font-weight:700;\">3</span></div></div>",
+          "fill": {
+            "color": "#F5F5F5"
+          },
+          "id": "940de42c-705d-4933-ba08-81447ee5d818",
+          "nth": 2,
+          "zIndex": 43
+        },
+        {
+          "html": "<div style=\"text-align:center;\"><div><span style=\"font-weight:bold;\">环</span></div><div><span style=\"font-weight:bold;\">节</span></div><div><span style=\"font-weight:700;\">4</span></div></div>",
+          "fill": {
+            "color": "#F5F5F5"
+          },
+          "id": "19840c5d-3f3f-463e-ae30-82fc302f5bb4",
+          "nth": 3,
+          "zIndex": 44
+        },
+        {
+          "html": "<div style=\"text-align:center;\"><div><span style=\"font-weight:bold;\">环</span></div><div><span style=\"font-weight:bold;\">节</span></div><div><span style=\"font-weight:700;\">5</span></div></div>",
+          "fill": {
+            "color": "#F5F5F5"
+          },
+          "id": "89a24df5-eb82-46b1-96da-4b5ef7a3f717",
+          "nth": 4,
+          "zIndex": 45
+        }
+      ],
+      "contain": [
+        "0a122ee2-59b8-45af-a3f6-883eaf8c781f",
+        "2e2c9455-a1e6-41ab-8680-0ef8ddd44fd4",
+        "5cd322a5-96ad-4c8b-9200-5f885430618a",
+        "0890985b-dc9b-4d99-b106-cc630b8119f0",
+        "7e22242c-6263-4075-91fe-aa3bbfe4eb41",
+        "1d0b9e4a-f1b5-4223-b3fc-9d6bd606de5c",
+        "420a6c36-8870-4fce-be4b-7a5a3261b31d",
+        "33555318-ad5f-436b-ab28-16d7d0bc9bec",
+        "171f765f-8aa9-40c0-a9a2-e11c25bbefeb",
+        "17acf64f-1bf8-412d-8820-4c93ede85c5c",
+        "fc0781d8-db39-47e5-bce1-84014ee2523f",
+        "962d0c25-8205-4b74-9e34-e42d395626de",
+        "e389946e-889c-496b-bfa2-ab788918a03f",
+        "964ebb35-c439-43ba-b03d-e1abcf5b4f84",
+        "2a25f041-69c4-4fdf-992b-b0e3c668dde7",
+        "832991cd-a38f-48e7-aad6-3a062b9f1027",
+        "1485b151-ed4b-4b63-a75c-98740bf6a1ee"
+      ],
+      "height": 798.3238051721687,
+      "width": 969.1301778033921,
+      "rotate": 0,
+      "stroke": {
+        "width": 1,
+        "color": "rgba(140,140,140,0.5)"
+      },
+      "zIndex": 46
+    }
+  ],
+  "settings": {
+    "viewport": {
+      "zoom": 0.6931975810731085,
+      "tlCanvasPoint": [970.4648996301598, 4.221757527944168, 1],
+      "width": 1575,
+      "height": 851
+    },
+    "options": "WYSIWYG"
+  },
+  "meta": {
+    "format": "lakeboard",
+    "type": "Board",
+    "original_version": "1.0"
+  }
+}
