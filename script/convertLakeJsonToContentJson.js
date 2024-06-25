@@ -170,7 +170,8 @@ export const convertLakeMindToContent = async (lakemind, savePath) => {
     await writeFile(resultFilePath, JSON.stringify(content, null, 4), "utf8");
     // console.log("文件已成功转换并保存为 content.json");
   } catch (err) {
-    console.error("解析文件内容时出错:", err.message);
+    // console.error("解析文件内容时出错:", err.message);
+    throw err;
   }
 
   // 等待所有下载完成

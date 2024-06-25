@@ -30,6 +30,7 @@ export function convertLakeboardToJson(inputFilePath) {
         resolve(newData);
       } catch (err) {
         reject(`解析文件内容时出错: ${err.message}`);
+        throw err;
       }
     });
   });

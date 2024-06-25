@@ -36,6 +36,7 @@ export const generateManifest = async (downloadedFiles, savePath) => {
     );
     // console.log(`manifest.json 文件已成功生成并保存为 ${manifestFilePath}`);
   } catch (err) {
-    console.error("生成 manifest.json 文件时出错:", err);
+    // console.error("生成 manifest.json 文件时出错:", err);
+    throw err;
   }
 };
