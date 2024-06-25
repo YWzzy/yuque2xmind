@@ -13,7 +13,7 @@ const inputFilePath = path.resolve(
   "..",
   "test",
   "input",
-  "test.lakeboard"
+  "思维导图-测试图片.lakeboard"
 ); // 假设输入文件在 test/input 目录下
 const outputFilePath = path.resolve(
   __dirname,

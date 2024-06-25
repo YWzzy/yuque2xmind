@@ -45,7 +45,9 @@ async function downloadFile(
     await ensureDir(resourcesPath); // 确保保存目录存在，如果不存在则创建它
 
     // 构建文件保存的完整路径
-    const fileExtension = fileType.split("/").pop();
+    const fileExtension = fileType.includes("/")
+      ? fileType.split("/").pop()
+      : fileType;
     const saveFilePath = join(resourcesPath, `${hash}.${fileExtension}`);
 
     // 发送 HTTP GET 请求下载文件
