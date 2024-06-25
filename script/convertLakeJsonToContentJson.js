@@ -152,7 +152,10 @@ export const convertLakeMindToContent = async (lakemind, savePath) => {
   }
 
   // 等待所有下载完成
-  const downloadedFiles = await Promise.all(downloadPromises);
+  const downloadedFiles = await Promise.allSettled(downloadPromises);
+  console.log("====================================");
+  console.log(downloadedFiles);
+  console.log("====================================");
 
   // 返回下载的文件路径
   return downloadedFiles;

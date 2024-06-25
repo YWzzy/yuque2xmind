@@ -49,6 +49,7 @@ async function downloadFile(
       ? fileType.split("/").pop()
       : fileType;
     const saveFilePath = join(resourcesPath, `${hash}.${fileExtension}`);
+    const manifestFilePath = join("resources", `${hash}.${fileExtension}`);
 
     // 发送 HTTP GET 请求下载文件
     const response = await axios({
@@ -64,7 +65,7 @@ async function downloadFile(
 
     // 返回 Promise 对象以便异步操作的控制
     return new Promise((resolve, reject) => {
-      writer.on("finish", resolve);
+      writer.on("finish", () => resolve(manifestFilePath));
       writer.on("error", reject);
     });
   } catch (error) {
