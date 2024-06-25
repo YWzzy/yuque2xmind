@@ -41,12 +41,12 @@ async function generateXMindFile(savePath) {
     // 构建 config 目录下文件的路径
     const metadataJsonPath = path.join(configDir, "metadata.json");
     const contentXmlPath = path.join(configDir, "content.xml");
-    const manifestJsonPath = path.join(configDir, "manifest.json");
+    // const manifestJsonPath = path.join(configDir, "manifest.json");
 
     // 读取 config 目录下文件内容
     const metadataJson = await fsPromises.readFile(metadataJsonPath, "utf-8");
     const contentXml = await fsPromises.readFile(contentXmlPath, "utf-8");
-    const manifestJson = await fsPromises.readFile(manifestJsonPath, "utf-8");
+    // const manifestJson = await fsPromises.readFile(manifestJsonPath, "utf-8");
 
     // 创建一个新的 ZIP 文件对象
     const zip = new JSZip();
@@ -54,7 +54,7 @@ async function generateXMindFile(savePath) {
     // 将 config 目录下的文件添加到 ZIP 文件中
     zip.file("metadata.json", metadataJson);
     zip.file("content.xml", contentXml);
-    zip.file("manifest.json", manifestJson);
+    // zip.file("manifest.json", manifestJson);
 
     // 读取 savePath 目录下的所有文件和子目录，并添加到 ZIP 文件中
     await addFilesToZip(savePath, zip, savePath);

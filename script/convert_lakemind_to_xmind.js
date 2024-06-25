@@ -5,7 +5,6 @@ import inquirer from "inquirer";
 import { SingleBar } from "cli-progress";
 import Table from "cli-table3";
 import pLimit from "p-limit";
-
 import { convertLakeboardToJson } from "./convertLakeboardToJson.js";
 import { convertLakeMindToContent } from "./convertLakeJsonToContentJson.js";
 import { generateManifest } from "./generateManifest.js";
