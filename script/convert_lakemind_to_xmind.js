@@ -9,6 +9,7 @@ import { createLogger, format, transports } from "winston";
 
 import { convertLakeboardToJson } from "./convertLakeboardToJson.js";
 import { convertLakeMindToContent } from "./convertLakeJsonToContentJson.js";
+import { generateManifest } from "./generateManifest.js";
 import { generateXMindFile } from "./generateXMindFile.js";
 
 // 设置日志记录器
@@ -181,7 +182,12 @@ prompt([
               const fileSize = stat.size;
 
               const LakeJson = await convertLakeboardToJson(file);
-              await convertLakeMindToContent(LakeJson, savePath);
+              // await convertLakeMindToContent(LakeJson, savePath);
+              const downloadedFiles = await convertLakeMindToContent(
+                LakeJson,
+                savePath
+              );
+              await generateManifest(downloadedFiles, savePath);
               await generateXMindFile(savePath);
 
               const endTime = Date.now();

@@ -83,9 +83,31 @@ const convertTopic = (
           topic.children.summary.push(summaryItem);
         }
       } else {
-        topic.children.attached.push(
-          convertTopic(child, savePath, downloadPromises, [])
-        );
+        if (child.hasOwnProperty("image") && child.image) {
+          const { hash, fileType } = child.image.uploadInfo;
+          const fileExtension = fileType.split("/").pop();
+          const imageObj = {
+            src: `xap:resources/${hash}.${fileExtension}`,
+          };
+          const fileParams = {
+            ...child.image.uploadInfo,
+            url: child.image.src,
+          };
+          if (fileParams.url && savePath) {
+            downloadPromises.push(
+              downloadFile(fileParams, savePath, 50 * 1024 * 1024, 30000)
+            );
+          }
+          topic.children.attached.push({
+            ...convertTopic(child, savePath, downloadPromises, []),
+            titleUnedited: true,
+            image: imageObj,
+          });
+        } else {
+          topic.children.attached.push(
+            convertTopic(child, savePath, downloadPromises, [])
+          );
+        }
       }
     });
   }
@@ -152,5 +174,8 @@ export const convertLakeMindToContent = async (lakemind, savePath) => {
   }
 
   // 等待所有下载完成
-  await Promise.all(downloadPromises);
+  const downloadedFiles = await Promise.allSettled(downloadPromises);
+
+  // 返回下载的文件路径
+  return downloadedFiles;
 };

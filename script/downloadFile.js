@@ -45,8 +45,11 @@ async function downloadFile(
     await ensureDir(resourcesPath); // 确保保存目录存在，如果不存在则创建它
 
     // 构建文件保存的完整路径
-    const fileExtension = fileType.split("/").pop();
+    const fileExtension = fileType.includes("/")
+      ? fileType.split("/").pop()
+      : fileType;
     const saveFilePath = join(resourcesPath, `${hash}.${fileExtension}`);
+    const manifestFilePath = join("resources", `${hash}.${fileExtension}`);
 
     // 发送 HTTP GET 请求下载文件
     const response = await axios({
@@ -62,7 +65,7 @@ async function downloadFile(
 
     // 返回 Promise 对象以便异步操作的控制
     return new Promise((resolve, reject) => {
-      writer.on("finish", resolve);
+      writer.on("finish", () => resolve(manifestFilePath));
       writer.on("error", reject);
     });
   } catch (error) {
